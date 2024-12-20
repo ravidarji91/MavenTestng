@@ -6,7 +6,11 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -18,9 +22,26 @@ import org.testng.annotations.AfterMethod;
 
 public class NewTest {
 	WebDriver driver = null;
-  @Test(enabled = true)
-  public void firsttest() {
+	
+	@DataProvider(name= "csvData")
+//	public Object[][] getCSVData() throws IOException {
+//		// FileReader fileInputStream = new FileReader("C:\\ravi-skyselect\\file_read\\test_data.csv");
+//		//CSVReader csvReader = new CSVReader();
+//        List<String[]> records = csvReader.readCSV("path/to/your/file.csv");
+//        
+//        Object[][] data = new Object[records.size()][];
+//        for (int i = 0; i < records.size(); i++) {
+//            data[i] = records.get(i);
+//        }
+//        return data;
+//    }
+
+	
+  @Test(dataProvider = "dataPrv", dataProviderClass = data_read.class)
+  public void firsttest(String values) {
 	  System.out.println("Check First Program");
+	  System.out.println("This is Dataprovider string" +values);
+	  
 	  //driver.get("demo.skyselect.com");
 //	  String current_title =driver.getTitle();
 //	  boolean flag = false;

@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="skyselect_Maven.skyselect_Maven.NewTest">
+      <class name="skyselect_Maven.skyselect_Maven.Login_Demo">
         <methods>
-          <include name="firsttest"/>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
+          <include name="logintrialBuyer"/>
         </methods>
-      </class> <!-- skyselect_Maven.skyselect_Maven.NewTest -->
+      </class> <!-- skyselect_Maven.skyselect_Maven.Login_Demo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

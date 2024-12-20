@@ -17,35 +17,35 @@
       <![CDATA[Clicked Page /nhttps://demo.skyselect.com/db/insights]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-09-24T18:06:38 IST" name="Default suite" finished-at="2024-09-24T18:07:15 IST" duration-ms="36722">
+  <suite started-at="2024-12-20T10:01:04 IST" name="Default suite" finished-at="2024-12-20T10:01:37 IST" duration-ms="33104">
     <groups>
     </groups>
-    <test started-at="2024-09-24T18:06:38 IST" name="Default test" finished-at="2024-09-24T18:07:15 IST" duration-ms="36722">
+    <test started-at="2024-12-20T10:01:04 IST" name="Default test" finished-at="2024-12-20T10:01:37 IST" duration-ms="33104">
       <class name="skyselect_Maven.skyselect_Maven.supplier_Demo">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:skyselect_Maven.skyselect_Maven.supplier_Demo@233795b6]" started-at="2024-09-24T18:06:38 IST" name="beforeTest" finished-at="2024-09-24T18:06:38 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:skyselect_Maven.skyselect_Maven.supplier_Demo@233795b6]" started-at="2024-12-20T10:01:04 IST" name="beforeTest" finished-at="2024-12-20T10:01:04 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:skyselect_Maven.skyselect_Maven.supplier_Demo@233795b6]" started-at="2024-09-24T18:06:38 IST" name="beforeClass" finished-at="2024-09-24T18:06:47 IST" duration-ms="9244" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:skyselect_Maven.skyselect_Maven.supplier_Demo@233795b6]" started-at="2024-12-20T10:01:04 IST" name="beforeClass" finished-at="2024-12-20T10:01:10 IST" duration-ms="6374" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:skyselect_Maven.skyselect_Maven.supplier_Demo@233795b6]" started-at="2024-09-24T18:06:47 IST" name="beforeMethod" finished-at="2024-09-24T18:06:47 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:skyselect_Maven.skyselect_Maven.supplier_Demo@233795b6]" started-at="2024-12-20T10:01:10 IST" name="beforeMethod" finished-at="2024-12-20T10:01:10 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="supplire_login()[pri:0, instance:skyselect_Maven.skyselect_Maven.supplier_Demo@233795b6]" started-at="2024-09-24T18:06:47 IST" name="supplire_login" finished-at="2024-09-24T18:06:54 IST" duration-ms="6770" status="PASS">
+        <test-method signature="supplire_login()[pri:0, instance:skyselect_Maven.skyselect_Maven.supplier_Demo@233795b6]" started-at="2024-12-20T10:01:10 IST" name="supplire_login" finished-at="2024-12-20T10:01:15 IST" duration-ms="4833" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Check login of Supplier]]>
             </line>
           </reporter-output>
         </test-method> <!-- supplire_login -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:skyselect_Maven.skyselect_Maven.supplier_Demo@233795b6]" started-at="2024-09-24T18:06:54 IST" name="beforeMethod" finished-at="2024-09-24T18:06:54 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:skyselect_Maven.skyselect_Maven.supplier_Demo@233795b6]" started-at="2024-12-20T10:01:15 IST" name="beforeMethod" finished-at="2024-12-20T10:01:15 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verify_All_Pages_Supplier()[pri:0, instance:skyselect_Maven.skyselect_Maven.supplier_Demo@233795b6]" started-at="2024-09-24T18:06:54 IST" name="verify_All_Pages_Supplier" finished-at="2024-09-24T18:07:15 IST" duration-ms="20660" status="PASS">
+        <test-method signature="verify_All_Pages_Supplier()[pri:0, instance:skyselect_Maven.skyselect_Maven.supplier_Demo@233795b6]" started-at="2024-12-20T10:01:15 IST" name="verify_All_Pages_Supplier" finished-at="2024-12-20T10:01:37 IST" duration-ms="21816" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Clicked Page /nhttps://demo.skyselect.com/db/tender/supplierview]]>
@@ -61,11 +61,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- verify_All_Pages_Supplier -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:skyselect_Maven.skyselect_Maven.supplier_Demo@233795b6]" started-at="2024-09-24T18:07:15 IST" name="afterClass" finished-at="2024-09-24T18:07:15 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:skyselect_Maven.skyselect_Maven.supplier_Demo@233795b6]" started-at="2024-12-20T10:01:37 IST" name="afterClass" finished-at="2024-12-20T10:01:37 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:skyselect_Maven.skyselect_Maven.supplier_Demo@233795b6]" started-at="2024-09-24T18:07:15 IST" name="afterTest" finished-at="2024-09-24T18:07:15 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:skyselect_Maven.skyselect_Maven.supplier_Demo@233795b6]" started-at="2024-12-20T10:01:37 IST" name="afterTest" finished-at="2024-12-20T10:01:37 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

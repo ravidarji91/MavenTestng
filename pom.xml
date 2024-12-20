@@ -58,6 +58,11 @@
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->		
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 		<!-- Over Added Dependencies -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-csv</artifactId>
+		    <version>1.8</version> <!-- Use the latest version to Read CSV file -->
+		</dependency>		
   </dependencies>
 
   <build>
