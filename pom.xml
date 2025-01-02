@@ -44,11 +44,7 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
-		<dependency>    
-		     <groupId>org.apache.commons</groupId>    
-		     <artifactId>commons-csv</artifactId>    
-		     <version>1.5</version>
-		</dependency>
+		
     <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 		<dependency>
 		    <groupId>io.github.bonigarcia</groupId>
@@ -58,11 +54,12 @@
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->		
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 		<!-- Over Added Dependencies -->
-		<dependency>
-		    <groupId>org.apache.commons</groupId>
-		    <artifactId>commons-csv</artifactId>
-		    <version>1.8</version> <!-- Use the latest version to Read CSV file -->
-		</dependency>		
+		<dependency> <!-- To Read CSV -->
+		    <groupId>com.opencsv</groupId>
+		    <artifactId>opencsv</artifactId>
+		    <version>5.1</version>
+		</dependency>
+
   </dependencies>
 
   <build>

@@ -13,7 +13,9 @@ import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -22,22 +24,19 @@ import org.testng.annotations.AfterMethod;
 
 public class NewTest {
 	WebDriver driver = null;
+	@Test@DataProvider(name= "testData")
+	public void checkData(String Username,String Password) {
+//		WebElement username= driver.findElement(By.name("username"));
+//		username.sendKeys(Username);
+		System.out.println("Testing login with username: " + Username + " and password: " + Password);
+		
+		
+		
+	}
 	
-	@DataProvider(name= "csvData")
-//	public Object[][] getCSVData() throws IOException {
-//		// FileReader fileInputStream = new FileReader("C:\\ravi-skyselect\\file_read\\test_data.csv");
-//		//CSVReader csvReader = new CSVReader();
-//        List<String[]> records = csvReader.readCSV("path/to/your/file.csv");
-//        
-//        Object[][] data = new Object[records.size()][];
-//        for (int i = 0; i < records.size(); i++) {
-//            data[i] = records.get(i);
-//        }
-//        return data;
-//    }
 
 	
-  @Test(dataProvider = "dataPrv", dataProviderClass = data_read.class)
+  @Test(dataProvider = "testData", dataProviderClass = data_read.class)
   public void firsttest(String values) {
 	  System.out.println("Check First Program");
 	  System.out.println("This is Dataprovider string" +values);

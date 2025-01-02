@@ -20,6 +20,7 @@ import org.testng.annotations.AfterTest;
 
 public class supplier_Demo {
   WebDriver driver= null;
+  public WebElementsPage webElementsPage;
   @Test
   public void supplire_login() throws InterruptedException {
 	  WebElement LoginPageTitle= driver.findElement(By.xpath("(//span[normalize-space()='Log in'])[1]"));
@@ -27,13 +28,14 @@ public class supplier_Demo {
 	  String title= driver.getTitle();
 	  System.out.println(title);
 	  	//assertEquals(title,"Login");
-	    WebElement username= driver.findElement(By.name("username"));
-	    username.sendKeys("sales@bestpart.com");
-	    driver.manage().timeouts().implicitlyWait(1,TimeUnit.SECONDS);
-	    driver.findElement(By.name("password")).sendKeys("Test@123");
-	    driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
-	    Reporter.log("Check login of Supplier",true);
-	    driver.findElement(By.xpath("//a[normalize-space()='Log in']")).click();
+//	    WebElement username= driver.findElement(By.name("username"));
+//	    username.sendKeys("sales@bestpart.com");
+//	    driver.manage().timeouts().implicitlyWait(1,TimeUnit.SECONDS);
+//	    driver.findElement(By.name("password")).sendKeys("Test@123");
+//	    driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
+//	    Reporter.log("Check login of Supplier",true);
+//	    driver.findElement(By.xpath("//a[normalize-space()='Log in']")).click();
+	  	webElementsPage.Login("sales@bestpart.com", "Test@123");
 	    
 	    String url_expected_suppDashboard = "https://demo.skyselect.com/db/tender/supplierview";
 	    Thread.sleep(2000);
@@ -121,6 +123,7 @@ public class supplier_Demo {
 	  
 	  driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	  driver.get("https://demo.skyselect.com");
+	  webElementsPage = new WebElementsPage(driver);
 	  
   }
 
