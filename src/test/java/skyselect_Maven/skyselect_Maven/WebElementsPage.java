@@ -6,13 +6,13 @@ import org.openqa.selenium.support.PageFactory;
 
 public class WebElementsPage {
 	 // Example WebElement
-    @FindBy(name = "username")
+    @FindBy(xpath = "//input[@placeholder='Email']")
     private WebElement usernameField;
 
-    @FindBy(name = "password")
+    @FindBy(xpath = "//input[@placeholder='Password']")
     private WebElement passwordField;
 
-    @FindBy(xpath = "//a[normalize-space()='Log in']")
+    @FindBy(xpath = "//div[@class='main-button large login-form-button rounded']//button[@type='button']")
     private WebElement btn_Login;
     
     @FindBy(xpath ="//button[@class='button-element blue-dark-2']")
@@ -20,6 +20,8 @@ public class WebElementsPage {
     
     @FindBy(id= "location-select-input")
     private WebElement text_location;
+    
+    
  
     
     
@@ -61,18 +63,19 @@ public class WebElementsPage {
     }
     
     
-//    // Getters for WebElements
-//    public WebElement getUsernameField() {
-//        return usernameField;
-//    }
-//
-//    public WebElement getPasswordField() {
-//        return passwordField;
-//    }
-//
-//    public WebElement getLoginButton() {
-//        return btn_Login;
-//    }
+    
+   // Getters for WebElements
+    public WebElement getUsernameField() {
+        return usernameField;
+    }
+
+    public WebElement getPasswordField() {
+        return passwordField;
+    }
+
+    public WebElement getLoginButton() {
+        return btn_Login;
+    }
     public WebElement getbutton_new() {
     	return btn_newonDashboard;
     }

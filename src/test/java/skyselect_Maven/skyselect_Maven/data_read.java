@@ -1,35 +1,31 @@
 package skyselect_Maven.skyselect_Maven;
-
 import java.io.FileReader;
-import java.io.IOException;
+import java.io.Reader;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import org.testng.annotations.Test;
-
-import com.opencsv.CSVReader;
-import com.opencsv.exceptions.CsvException;
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVRecord;
 
 public class data_read {
-    @org.testng.annotations.DataProvider(name = "testData")
-    public static Object[][] readCSV() throws IOException, CsvException {
-        Object[][] data = null;
-        try (CSVReader csvReader = new CSVReader(new FileReader("C:/ravi-skyselect/file_read/test_data.csv"))) {
-            List<String[]> records = csvReader.readAll();
-            data = new Object[records.size()][2];
-            for (int i = 0; i < records.size(); i++) {
-                data[i][0] = records.get(i)[0];
-                data[i][1] = records.get(i)[1];
-                data[i][2] = records.get(i)[2];
-                
-            }
-        }
-        return data;
-    }
-    
-    @Test (dataProvider = "testData" )
-    public void Test_read(String values) {
-    	System.out.println("The Readable Data is "+ values);
-    	
-    }
+	 public static Iterator<Object[]> readCSVData(String filePath) throws Exception {
+	        Reader reader = new FileReader(filePath);
+	        Iterable<CSVRecord> records = CSVFormat.DEFAULT
+	                .withFirstRecordAsHeader()
+	                .parse(reader);
+	       // int currentIndex = 0;
+
+	        List<Object[]> data = new ArrayList<>();
+	        for (CSVRecord record : records) {
+	            String username = record.get("username");
+	            String password = record.get("password");
+	            data.add(new Object[]{username, password});
+	        }
+
+	        return data.iterator();
+	    }
+   
 }
 

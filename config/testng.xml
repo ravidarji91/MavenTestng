@@ -3,9 +3,9 @@
 <suite name="Suite">
   <test thread-count="1" name="Check Demo">
     <classes>
-      <class name="skyselect_Maven.skyselect_Maven.NewTest"/>
-      <class name="skyselect_Maven.skyselect_Maven.Login_Demo"/>
-      <class name="skyselect_Maven.skyselect_Maven.supplier_Demo"/>
+<!--      <class name="skyselect_Maven.skyselect_Maven.NewTest"/>-->
+      <class name="skyselect_Maven.skyselect_Maven.Buyer_Demo"/>
+<!--      <class name="skyselect_Maven.skyselect_Maven.supplier_Demo"/>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

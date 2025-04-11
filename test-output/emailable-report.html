@@ -9,59 +9,33 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">22,691</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">34,189</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">skyselect_Maven.skyselect_Maven.Buyer_Demo</td><td><a href="#m0">create_rfq</a></td><td rowspan="1">1735793877369</td><td rowspan="1">10447</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">skyselect_Maven.skyselect_Maven.Buyer_Demo</td><td><a href="#m1">Buyer_login</a></td><td rowspan="1">1735793872672</td><td rowspan="1">4686</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">skyselect_Maven.skyselect_Maven.Buyer_Demo</td><td><a href="#m0">create_rfq</a></td><td rowspan="1">1744353155199</td><td rowspan="1">23078</td></tr><tr class="passedeven"><td><a href="#m1">rfq_check</a></td><td rowspan="1">1744353178289</td><td rowspan="1">118</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">skyselect_Maven.skyselect_Maven.Buyer_Demo#create_rfq</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">New RequestModal open Up<br/>Create a request : SkySelect<br/>Default Set Qty : </div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;el-select__wrapper is-filterable el-tooltip__trigger el-tooltip__trigger&quot; tabindex=&quot;-1&quot;&gt;...&lt;/div&gt; is not clickable at point (953, 466). Other element would receive the click: &lt;div data-v-8a9c9ede=&quot;&quot; class=&quot;footer-inner-wrapper&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=131.0.6778.205)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d768cba28740607006ed0b7f616ec7bf, clickElement {id=f.7AB8CD77609E98AF339AF80F24086813.d.E2EFBB44AC9EF4A91E7FE960E20B1432.e.144}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\RAVI-S~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51495}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51495/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (d768cba28740607006ed0b7f616ec7bf)] -&gt; xpath: (//div[@class=&apos;el-select__wrapper is-filterable el-tooltip__trigger el-tooltip__trigger&apos;])[7]]
-Session ID: d768cba28740607006ed0b7f616ec7bf
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at skyselect_Maven.skyselect_Maven.Buyer_Demo.create_rfq(Buyer_Demo.java:193)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">skyselect_Maven.skyselect_Maven.Buyer_Demo#Buyer_login</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Logged in Successfully with: RFQ Dashboard : SkySelect</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">skyselect_Maven.skyselect_Maven.Buyer_Demo#create_rfq</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">New RequestModal open Up<br/>Create a request : SkySelect<br/>Default Set Qty : <br/>Description added :Test Part<br/>Part Added Successfully :DK120
+QTY
+11
+UOM
+EA
+CERT REQ
+-
+TRACE REQ
+-
+LLP REQ
+-
+DOM/EXP REQ
+-
+MIN CONDITION
+DESCRIPTION
+*
+TEST PART
+INTERNAL NOTES
+-
+NEED BY DATE
+-
+REQUISITION NUMBER
+-<br/> RFQ Published Successfully<br/>RFQ created Successfullyhttps://demo.skyselect.com/db/tender/buyerview/id_1977#bids</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">skyselect_Maven.skyselect_Maven.Buyer_Demo#rfq_check</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">#96 ROUTINE RFQ for aircraft TL123 at TLL // REF_123</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

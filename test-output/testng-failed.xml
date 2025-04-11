@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="skyselect_Maven.skyselect_Maven.Buyer_Demo">
+      <class name="skyselect_Maven.skyselect_Maven.NewTest">
         <methods>
-          <include name="create_rfq"/>
-          <include name="setup"/>
+          <include name="login" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
           <include name="afterClass"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- skyselect_Maven.skyselect_Maven.Buyer_Demo -->
+      </class> <!-- skyselect_Maven.skyselect_Maven.NewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

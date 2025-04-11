@@ -57,10 +57,30 @@
 		<dependency> <!-- To Read CSV -->
 		    <groupId>com.opencsv</groupId>
 		    <artifactId>opencsv</artifactId>
-		    <version>5.1</version>
+		    <version>5.9</version>
 		</dependency>
+		
+		<dependency><!-- To integrate with Testrail -->
+	      <groupId>org.testng</groupId>
+	      <artifactId>testng</artifactId>
+	      <version>7.10.1</version>
+	      <scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+		<dependency>
+		    <groupId>com.googlecode.json-simple</groupId>
+		    <artifactId>json-simple</artifactId>
+		    <version>1.1.1</version>
+		</dependency>
+		  <!-- Apache Commons CSV Dependency -->
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-csv</artifactId>
+        <version>1.9.0</version>
+    </dependency>
+		
 
-  </dependencies>
+  	</dependencies>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
