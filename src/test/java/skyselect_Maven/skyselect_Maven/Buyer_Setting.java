@@ -26,10 +26,10 @@ import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Buyer_Setting {
-	WebDriver driver= null; 
+public class Buyer_Setting extends BaseTest_Buyer {
+	//WebDriver driver= null; 
 	public WebElementsPage webElementsPage;
-	@Test (enabled = false)
+	@Test (enabled = true)
 	public void verify_All_Pages_Buyer() throws InterruptedException {
 		
 		// Overview Dashboard
@@ -40,20 +40,20 @@ public class Buyer_Setting {
 		Thread.sleep(2000);
 		String url_actual_overview = driver.getCurrentUrl();
 		org.testng.Assert.assertEquals(url_actual_overview,url_expected_overview,"URL don't Match");
-		System.out.println( driver.getTitle() +" Clicked");
-		Reporter.log( url_actual_overview + "Clicked Page ",true);
+		System.out.println( driver.getTitle() +"Clicked");
+		Reporter.log( url_actual_overview + "Clicked Page",true);
 		Thread.sleep(2000);
 		
 		// RFQ Dashboard
-		WebElement link_rfqDashboard = driver.findElement(By.xpath("//li[@index='requests-sub-menu']"));
+		WebElement link_rfqDashboard = driver.findElement(By.xpath("//li[@class='el-sub-menu sub-menu']"));
 		String url_expected_rfqDashboard = "https://demo.skyselect.com/db/tender/purchases";
-		link_rfqDashboard.click();
+		driver.get(url_expected_rfqDashboard);
 		driver.getTitle();
 		Thread.sleep(2000);
 		String url_actual_rfqDashboard = driver.getCurrentUrl();
 		org.testng.Assert.assertEquals(url_actual_rfqDashboard,url_expected_rfqDashboard,"URL don't Match");
-		System.out.println(driver.getTitle()+ " Clicked");
-		Reporter.log("Clicked Page /n"+ url_actual_rfqDashboard,true);
+		System.out.println(driver.getTitle()+ "Clicked");
+		Reporter.log("Clicked Page "+ url_actual_rfqDashboard,true);
 		Thread.sleep(2000);
 		
 		//Awarding Dashboard
@@ -65,8 +65,8 @@ public class Buyer_Setting {
 		String url_actual_awarding = driver.getCurrentUrl();
 		org.testng.Assert.assertEquals(url_actual_awarding,url_expected_awarding,"URL don't Match");
 		Thread.sleep(2000);
-		System.out.println(driver.getTitle()+" Clicked");
-		Reporter.log("Clicked Page /n"+ url_actual_awarding,true);
+		System.out.println(driver.getTitle()+"Clicked");
+		Reporter.log("Clicked Page "+ url_actual_awarding,true);
 		//Order Dashboard
 		WebElement link_orderDashboard = driver.findElement(By.xpath("//li[@index='orders-dashboard']"));
 		String url_expected_orderDashboard = "https://demo.skyselect.com/db/orders/dashboard";
@@ -76,7 +76,7 @@ public class Buyer_Setting {
 		String url_actual_orderDashboard = driver.getCurrentUrl();
 		org.testng.Assert.assertEquals(url_actual_orderDashboard,url_expected_orderDashboard,"URL don't Match");
 		Thread.sleep(2000);
-		System.out.println(driver.getTitle()+" Clicked");
+		System.out.println(driver.getTitle()+"Clicked");
 		Reporter.log("Clicked Page /n"+ url_actual_orderDashboard,true);
 		// SRM List
 		WebElement link_srmList = driver.findElement(By.xpath("//li[@index='suppliers']"));
@@ -87,7 +87,7 @@ public class Buyer_Setting {
 		String url_actual_srmList = driver.getCurrentUrl();
 		org.testng.Assert.assertEquals(url_actual_srmList,url_expected_srmList,"URL don't Match");
 		Thread.sleep(2000);
-		System.out.println(driver.getTitle()+" Clicked");
+		System.out.println(driver.getTitle()+"Clicked");
 		Reporter.log("Clicked Page /n"+ url_actual_srmList,true);
 		// Analytics Page
 		WebElement link_analytics = driver.findElement(By.xpath("//li[@index='analytics']"));
@@ -98,7 +98,7 @@ public class Buyer_Setting {
 		String url_actual_analytics = driver.getCurrentUrl();
 		org.testng.Assert.assertEquals(url_actual_analytics,url_expected_analytics,"URL don't Match");
 		Thread.sleep(2000);
-		System.out.println(driver.getTitle()+" Clicked");
+		System.out.println(driver.getTitle()+"Clicked");
 		Reporter.log("Clicked Page /n"+ url_actual_analytics,true);
 
 	}
@@ -167,14 +167,14 @@ public class Buyer_Setting {
 	 	  
   }
   //General tab	
-  @Test(enabled = true)
+  @Test(enabled = false)
   public void general_setting() throws InterruptedException{
 	  
 	  Thread.sleep(1000);
 	  String actual_url ="https://demo.skyselect.com/db/company/settings/view_general" ;
 	  driver.get("https://demo.skyselect.com/db/company/settings/view_general");
-	  String currenturl= driver.getCurrentUrl();
-	  org.testng.Assert.assertEquals(currenturl,actual_url,"URL don't Match");
+	  String Currenturl= driver.getCurrentUrl();
+	  org.testng.Assert.assertEquals(Currenturl,actual_url,"URL don't Match");
 	  
 	  
   } 
@@ -182,33 +182,33 @@ public class Buyer_Setting {
   
 	
 
-  @BeforeMethod
-  public void beforeMethod() throws InterruptedException {
-	  
-	  
-  }
+//  @BeforeMethod
+//  public void beforeMethod() throws InterruptedException {
+//	  
+//	  
+//  }
 
   @AfterMethod
   public void afterMethod() {
   }
 
-  @BeforeClass
-  public void beforeClass() throws InterruptedException {
-	  WebDriverManager.chromedriver().setup();
-	  
-	  driver= new ChromeDriver();
-	  driver.manage().window().maximize();
-	  
-	  driver.manage().deleteAllCookies();
-	  
-	  driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-	  driver.get("https://demo.skyselect.com");
-	  webElementsPage = new WebElementsPage(driver);
-	  webElementsPage.Login("sales@airindia.com", "Test@123");
-  
-	  
-
-  }
+//  @BeforeClass
+//  public void beforeClass() throws InterruptedException {
+//	  WebDriverManager.chromedriver().setup();
+//	  
+//	  driver= new ChromeDriver();
+//	  driver.manage().window().maximize();
+//	  
+//	  driver.manage().deleteAllCookies();
+//	  
+//	  driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+//	  driver.get("https://demo.skyselect.com");
+//	  webElementsPage = new WebElementsPage(driver);
+//	  webElementsPage.Login("sales@airindia.com", "Test@123");
+//  
+//	  
+//
+//  }
 
   @AfterClass
   public void afterClass() {

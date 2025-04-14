@@ -54,13 +54,15 @@
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->		
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 		<!-- Over Added Dependencies -->
-		<dependency> <!-- To Read CSV -->
+		 <!-- To Read CSV -->
+		<dependency>
 		    <groupId>com.opencsv</groupId>
 		    <artifactId>opencsv</artifactId>
 		    <version>5.9</version>
 		</dependency>
 		
-		<dependency><!-- To integrate with Testrail -->
+		<!-- To integrate with Testrail -->
+		<dependency>
 	      <groupId>org.testng</groupId>
 	      <artifactId>testng</artifactId>
 	      <version>7.10.1</version>
@@ -72,12 +74,12 @@
 		    <artifactId>json-simple</artifactId>
 		    <version>1.1.1</version>
 		</dependency>
-		  <!-- Apache Commons CSV Dependency -->
-    <dependency>
-        <groupId>org.apache.commons</groupId>
-        <artifactId>commons-csv</artifactId>
-        <version>1.9.0</version>
-    </dependency>
+		<!-- Apache Commons CSV Dependency -->	  
+	    <dependency>
+	        <groupId>org.apache.commons</groupId>
+	        <artifactId>commons-csv</artifactId>
+	        <version>1.9.0</version>
+	    </dependency>
 		
 
   	</dependencies>

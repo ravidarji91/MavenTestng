@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[New RequestModal open Up]]>
@@ -42,22 +42,65 @@ REQUISITION NUMBER
       <![CDATA[ RFQ Published Successfully]]>
     </line>
     <line>
-      <![CDATA[RFQ created Successfullyhttps://demo.skyselect.com/db/tender/buyerview/id_1977#bids]]>
+      <![CDATA[RFQ created Successfullyhttps://demo.skyselect.com/db/tender/expresscreate/id_1980]]>
     </line>
     <line>
-      <![CDATA[#96 ROUTINE RFQ for aircraft TL123 at TLL // REF_123]]>
+      <![CDATA[#98 ROUTINE RFQ for aircraft TL123 at TLL // REF_123]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-04-11T12:02:24 IST" name="Default suite" finished-at="2025-04-11T12:02:58 IST" duration-ms="34189">
+  <suite started-at="2025-04-14T11:41:42 IST" name="Default suite" finished-at="2025-04-14T11:42:17 IST" duration-ms="34622">
     <groups>
     </groups>
-    <test started-at="2025-04-11T12:02:24 IST" name="Default test" finished-at="2025-04-11T12:02:58 IST" duration-ms="34189">
+    <test started-at="2025-04-14T11:41:42 IST" name="Default test" finished-at="2025-04-14T11:42:17 IST" duration-ms="34622">
       <class name="skyselect_Maven.skyselect_Maven.Buyer_Demo">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@4e08711f]" started-at="2025-04-11T12:02:24 IST" name="beforeClass" finished-at="2025-04-11T12:02:35 IST" duration-ms="10926" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@65e98b1c]" started-at="2025-04-14T11:41:42 IST" name="beforeClass" finished-at="2025-04-14T11:41:49 IST" duration-ms="6788" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="create_rfq()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@4e08711f]" started-at="2025-04-11T12:02:35 IST" name="create_rfq" finished-at="2025-04-11T12:02:58 IST" duration-ms="23078" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@65e98b1c]" started-at="2025-04-14T11:41:49 IST" name="beforeMethod" finished-at="2025-04-14T11:41:49 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@65e98b1c]" started-at="2025-04-14T11:41:49 IST" name="afterMethod" finished-at="2025-04-14T11:41:49 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@65e98b1c]" started-at="2025-04-14T11:41:49 IST" name="login" data-provider="loginData" finished-at="2025-04-14T11:41:54 IST" duration-ms="4721" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sales@airindia.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="addResultToTestRail(org.testng.ITestResult)[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@65e98b1c]" started-at="2025-04-14T11:41:54 IST" name="addResultToTestRail" finished-at="2025-04-14T11:41:55 IST" duration-ms="1423" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=BaseTest_Buyer.login(java.lang.String,java.lang.String)[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@65e98b1c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addResultToTestRail -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@65e98b1c]" started-at="2025-04-14T11:41:54 IST" name="afterMethod" finished-at="2025-04-14T11:41:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@65e98b1c]" started-at="2025-04-14T11:41:55 IST" name="beforeMethod" finished-at="2025-04-14T11:41:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="create_rfq()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@65e98b1c]" started-at="2025-04-14T11:41:55 IST" name="create_rfq" finished-at="2025-04-14T11:42:15 IST" duration-ms="19949" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[New RequestModal open Up]]>
@@ -100,34 +143,60 @@ REQUISITION NUMBER
               <![CDATA[ RFQ Published Successfully]]>
             </line>
             <line>
-              <![CDATA[RFQ created Successfullyhttps://demo.skyselect.com/db/tender/buyerview/id_1977#bids]]>
+              <![CDATA[RFQ created Successfullyhttps://demo.skyselect.com/db/tender/expresscreate/id_1980]]>
             </line>
           </reporter-output>
         </test-method> <!-- create_rfq -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@4e08711f]" started-at="2025-04-11T12:02:35 IST" name="beforeMethod" finished-at="2025-04-11T12:02:35 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@4e08711f]" started-at="2025-04-11T12:02:58 IST" name="afterMethod" finished-at="2025-04-11T12:02:58 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@65e98b1c]" started-at="2025-04-14T11:41:55 IST" name="afterMethod" finished-at="2025-04-14T11:41:55 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="rfq_check()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@4e08711f]" started-at="2025-04-11T12:02:58 IST" name="rfq_check" finished-at="2025-04-11T12:02:58 IST" depends-on-methods="skyselect_Maven.skyselect_Maven.Buyer_Demo.create_rfq" duration-ms="118" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@65e98b1c]" started-at="2025-04-14T11:42:15 IST" name="afterMethod" finished-at="2025-04-14T11:42:15 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="addResultToTestRail(org.testng.ITestResult)[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@65e98b1c]" started-at="2025-04-14T11:42:15 IST" name="addResultToTestRail" finished-at="2025-04-14T11:42:16 IST" duration-ms="955" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=create_rfq status=SUCCESS method=Buyer_Demo.create_rfq()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@65e98b1c] output=New RequestModal open Up]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addResultToTestRail -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@65e98b1c]" started-at="2025-04-14T11:42:16 IST" name="beforeMethod" finished-at="2025-04-14T11:42:16 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="rfq_check()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@65e98b1c]" started-at="2025-04-14T11:42:16 IST" name="rfq_check" finished-at="2025-04-14T11:42:16 IST" depends-on-methods="skyselect_Maven.skyselect_Maven.Buyer_Demo.create_rfq" duration-ms="164" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[#96 ROUTINE RFQ for aircraft TL123 at TLL // REF_123]]>
+              <![CDATA[#98 ROUTINE RFQ for aircraft TL123 at TLL // REF_123]]>
             </line>
           </reporter-output>
         </test-method> <!-- rfq_check -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@4e08711f]" started-at="2025-04-11T12:02:58 IST" name="beforeMethod" finished-at="2025-04-11T12:02:58 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@4e08711f]" started-at="2025-04-11T12:02:58 IST" name="afterMethod" finished-at="2025-04-11T12:02:58 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@65e98b1c]" started-at="2025-04-14T11:42:16 IST" name="afterMethod" finished-at="2025-04-14T11:42:16 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@4e08711f]" started-at="2025-04-11T12:02:58 IST" name="afterClass" finished-at="2025-04-11T12:02:58 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@65e98b1c]" started-at="2025-04-14T11:42:16 IST" name="afterMethod" finished-at="2025-04-14T11:42:16 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="addResultToTestRail(org.testng.ITestResult)[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@65e98b1c]" started-at="2025-04-14T11:42:16 IST" name="addResultToTestRail" finished-at="2025-04-14T11:42:17 IST" duration-ms="551" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=rfq_check status=SUCCESS method=Buyer_Demo.rfq_check()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@65e98b1c] output=#98 ROUTINE RFQ for aircraft TL123 at TLL // REF_123]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addResultToTestRail -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Demo@65e98b1c]" started-at="2025-04-14T11:42:17 IST" name="afterClass" finished-at="2025-04-14T11:42:17 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

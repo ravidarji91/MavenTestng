@@ -1,11 +1,13 @@
 package skyselect_Maven.skyselect_Maven;
 
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.opencsv.exceptions.CsvValidationException;
+import com.test.TestRailManager.TestrailManager;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -28,9 +30,11 @@ import org.testng.annotations.AfterMethod;
 
 //skyselect_Maven.skyselect_Maven.NewTest;
 
-public class NewTest {
-	WebDriver driver = null;
+public class BaseTest_Buyer {
+	WebDriver driver;
 	public WebElementsPage webElementsPage; 
+	protected String testcaseId;
+	
 	
  @DataProvider(name = "loginData")
  public static Iterator<Object[]> loginDataProvider() throws Exception {
@@ -39,7 +43,8 @@ public class NewTest {
 	
    
   @Test (enabled = true, dataProvider ="loginData")
-  public void login(String username,String password) {
+  public void login(String username,String password) throws InterruptedException {
+	  testcaseId= "9899";
 	  
 //	webElementsPage.getUsernameField().sendKeys(username);
 //	webElementsPage.getPasswordField().sendKeys(password);
@@ -51,6 +56,10 @@ public class NewTest {
 	  uname.sendKeys(username);
 	  pwd.sendKeys(password);
 	  btn_submit.click();
+	  Thread.sleep(1000);
+	  WebElement pagetitle=driver.findElement(By.xpath("//div[@class='sub-menu-title']"));
+	  Thread.sleep(500);
+	  assert pagetitle.isDisplayed(); 
 	
   }
 
@@ -75,7 +84,7 @@ public class NewTest {
   @AfterClass
   public void afterClass() { 	
 	  System.out.println("Check After Class");
-	  //driver.quit();
+	  driver.quit();
   }
   @BeforeMethod
   public void beforeMethod() {
@@ -83,8 +92,15 @@ public class NewTest {
 	  
   }
   @AfterMethod
-  public void afterMethod() {
-	  System.out.println("Check Post Method in Run");
-  }
+ public void addResultToTestRail(ITestResult result) {
+	  if (result.getStatus() == ITestResult.SUCCESS) {
+		  TestrailManager.addResultForTestCase(testcaseId,TestrailManager.TEST_CASE_PASS_STATUS, "Test got Passed");
+	  }
+	  else if (result.getStatus() == ITestResult.FAILURE) {
+		  TestrailManager.addResultForTestCase(testcaseId,TestrailManager.TEST_CASE_FAIL_STATUS, 
+				  "Test got Failed" + result.getName()+": FAILED");
+	}
+	  
+  } 	
 
 }

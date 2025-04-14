@@ -33,10 +33,11 @@ import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Buyer_Demo {
-	WebDriver driver= null;
+public class Buyer_Demo extends BaseTest_Buyer  {
+	//WebDriver driver;
 	//WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(3));
 	public WebElementsPage webElementsPage; 
+	
   
   @Test(enabled = false)
   public void buyerlogin() throws InterruptedException {  
@@ -52,7 +53,9 @@ public class Buyer_Demo {
 	   	  
   } 
   @Test(enabled = true) //dependsOnMethods = {"buyerlogin"}
-  public void create_rfq() throws InterruptedException {	  
+  public void create_rfq() throws InterruptedException {
+	  		testcaseId= "9992";
+	  		webElementsPage = new WebElementsPage(driver);
 			JavascriptExecutor js = (JavascriptExecutor) driver;
 			//Check User Login
 			//Boolean flag = driver.findElement(By.xpath("//a[@class='router-link-active router-link-exact-active menu-item-link']//div[@class='menu-title']//*[name()='svg']//*[name()='use' and contains(@width,'14')]")).isDisplayed();
@@ -195,6 +198,7 @@ public class Buyer_Demo {
   }
   @Test(enabled = true,dependsOnMethods = {"create_rfq"})
   public void rfq_check() {
+	  testcaseId= "9993";
 	  // Define explicit wait
       WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));  // Wait for 10 seconds
    // Wait until the element is visible
@@ -204,9 +208,6 @@ public class Buyer_Demo {
       String rfq_title=driver.findElement(By.xpath("//div[@class='request-title request-header-block']")).getText();
       Reporter.log(rfq_title,true);
 
-
-
-	  
 	  
 	 
 	 
@@ -215,10 +216,10 @@ public class Buyer_Demo {
 	
 
   @BeforeMethod
-  public void beforeMethod() throws InterruptedException {
-	  
-	  
-  }
+//  public void beforeMethod() throws InterruptedException {
+//	  
+//	  
+//  }
 
   @AfterMethod
   public void afterMethod() {
@@ -226,25 +227,23 @@ public class Buyer_Demo {
   
   
 
-  @BeforeClass
-  public void beforeClass() throws InterruptedException {
-	  WebDriverManager.chromedriver().setup();
-	  
-	  driver= new ChromeDriver();
-	  driver.manage().window().maximize();
-	  
-	  driver.manage().deleteAllCookies();
-	  
-	  driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-	  driver.get("https://demo.skyselect.com");
-	  webElementsPage = new WebElementsPage(driver);
-	  
-	  
-	  webElementsPage.Login("sales@airindia.com", "Test@123");
-  
-	  
-
-  }
+//  @BeforeClass
+//  public void beforeClass() throws InterruptedException {
+//	  WebDriverManager.chromedriver().setup();
+//	  
+//	  driver= new ChromeDriver();
+//	  driver.manage().window().maximize();
+//	  
+//	  driver.manage().deleteAllCookies();
+//	  
+//	  driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+//	  driver.get("https://demo.skyselect.com");
+//	  webElementsPage = new WebElementsPage(driver);
+//	  webElementsPage.Login("sales@airindia.com", "Test@123");
+//  
+//	  
+//
+//  }
 
   @AfterClass
   public void afterClass() {
