@@ -37,6 +37,7 @@ public class Buyer_Demo extends BaseTest_Buyer  {
 	//WebDriver driver;
 	//WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(3));
 	public WebElementsPage webElementsPage; 
+	public static String tender_link;
 	
   
   @Test(enabled = false)
@@ -52,8 +53,10 @@ public class Buyer_Demo extends BaseTest_Buyer  {
 	  
 	   	  
   } 
-  @Test(enabled = true) //dependsOnMethods = {"buyerlogin"}
-  public void create_rfq() throws InterruptedException {
+  
+  
+  @Test(enabled = true,dataProvider = "partData",dataProviderClass = BaseTest_Buyer.class) //dependsOnMethods = {"buyerlogin"}
+  public void create_rfq(String partno,String description,String qty) throws InterruptedException {
 	  		testcaseId= "9992";
 	  		webElementsPage = new WebElementsPage(driver);
 			JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -61,7 +64,7 @@ public class Buyer_Demo extends BaseTest_Buyer  {
 			//Boolean flag = driver.findElement(By.xpath("//a[@class='router-link-active router-link-exact-active menu-item-link']//div[@class='menu-title']//*[name()='svg']//*[name()='use' and contains(@width,'14')]")).isDisplayed();
 		    //assertEquals(flag, true);
 			Thread.sleep(1000);
-			 WebElement pagetitle=driver.findElement(By.xpath("//div[@class='sub-menu-title']"));
+			 WebElement pagetitle=driver.findElement(By.xpath("//li[@class='el-sub-menu sub-menu']"));
 			 assert pagetitle.isDisplayed(); 
 		    if(webElementsPage.getbutton_new().isDisplayed())
 		    {
@@ -95,19 +98,19 @@ public class Buyer_Demo extends BaseTest_Buyer  {
 					Reporter.log("Location not found",true);
 				}
 		    	
-		    	driver.findElement(By.xpath("(//input[@type='text'])[8]")).sendKeys("REF_123");
-		    	driver.findElement(By.xpath("(//input[@type='text'])[9]")).sendKeys("TL123");
+		    	driver.findElement(By.xpath("//body/div[@id='app']/div[@id='app']/div[@class='create-rfq-page']/div[@class='rfq-details-section']/div[@class='section-row']/div[2]/div[2]/div[1]/div[2]/input[1]")).sendKeys("REF_123");
+		    	driver.findElement(By.xpath("//body/div[@id='app']/div[@id='app']/div[@class='create-rfq-page']/div[@class='rfq-details-section']/div[@class='section-row']/div[3]/div[2]/div[1]/div[2]/input[1]")).sendKeys("TL123");
 		    	
 		    	
 		    	//Enter Part No
 		    	String exp_Part_no = "DK120";
-		    	driver.findElement(By.xpath("//input[@id='part_no-input']")).sendKeys(exp_Part_no);
+		    	driver.findElement(By.xpath("//input[@id='part_no-input']")).sendKeys(partno);
 		    	
 		    	//Enter Qty
 		    	String get_qty= driver.findElement(By.xpath("//input[@id='qty']")).getText();
 		    	Reporter.log("Default Set Qty : "+ get_qty,true);
 		    	driver.findElement(By.xpath("//input[@id='qty']")).clear();
-		    	driver.findElement(By.xpath("//input[@id='qty']")).sendKeys("11");
+		    	driver.findElement(By.xpath("//input[@id='qty']")).sendKeys(qty);
 		    	
 		    	
 //		    	//Condition Selection
@@ -126,7 +129,7 @@ public class Buyer_Demo extends BaseTest_Buyer  {
 		    	Thread.sleep(1000);
 		    	
 		    	//Description
-		    	driver.findElement(By.id("description-input")).sendKeys("TEST PART");
+		    	driver.findElement(By.id("description-input")).sendKeys(description);
 		    	Reporter.log("Description added :Test Part",true);
 		    	Thread.sleep(1000);
 		    	js.executeScript("window.scrollTo(0,250)");
@@ -180,8 +183,9 @@ public class Buyer_Demo extends BaseTest_Buyer  {
 		    	
 		    	Thread.sleep(2000);
 		    	String url_qc= driver.getCurrentUrl();
-		    	System.out.println("RFQ created Successfully" + url_qc);
+		    	//System.out.println("RFQ created Successfully" + url_qc);
 		    	Reporter.log( "RFQ created Successfully" +url_qc,true);
+		    	tender_link = url_qc;
 		    	
 		    	// Split the string by "id_"
 		        String[] parts = url_qc.split("id_");
@@ -206,47 +210,30 @@ public class Buyer_Demo extends BaseTest_Buyer  {
       // Perform actions after the element is visible
       assert rfq_header.isDisplayed();
       String rfq_title=driver.findElement(By.xpath("//div[@class='request-title request-header-block']")).getText();
-      Reporter.log(rfq_title,true);
-
-	  
-	 
+      Reporter.log(rfq_title,true);  
 	 
   }
+  
+  @Test(enabled = true,dependsOnMethods = {"rfq_check"}) 
+	  public void qc_check() { 
+	  driver.get(tender_link);  
+	  driver.navigate().refresh();	
+	  System.out.println("QC page is Opened");
+	  Reporter.log(tender_link +" Opened",true );
+	  
+	  }
+  @Test (enabled = true,dependsOnMethods = {"rfq_check"})
+  public void qc_action_1() {
+	  
+	  WebElement qc_part= driver.findElement(By.xpath("//div[@class='label-text']"));
+	  assert qc_part.isDisplayed();
+	  System.out.println(qc_part.getText());	  
+	  
+	  
+  }
+  }
+
   
 	
 
-  @BeforeMethod
-//  public void beforeMethod() throws InterruptedException {
-//	  
-//	  
-//  }
 
-  @AfterMethod
-  public void afterMethod() {
-  }
-  
-  
-
-//  @BeforeClass
-//  public void beforeClass() throws InterruptedException {
-//	  WebDriverManager.chromedriver().setup();
-//	  
-//	  driver= new ChromeDriver();
-//	  driver.manage().window().maximize();
-//	  
-//	  driver.manage().deleteAllCookies();
-//	  
-//	  driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-//	  driver.get("https://demo.skyselect.com");
-//	  webElementsPage = new WebElementsPage(driver);
-//	  webElementsPage.Login("sales@airindia.com", "Test@123");
-//  
-//	  
-//
-//  }
-
-  @AfterClass
-  public void afterClass() {
-  }
-
-}

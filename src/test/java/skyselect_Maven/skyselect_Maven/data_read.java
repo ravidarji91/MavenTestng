@@ -10,22 +10,24 @@ import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
 
 public class data_read {
-	 public static Iterator<Object[]> readCSVData(String filePath) throws Exception {
+
+	 public static Iterator<Object[]> readCSVData(String filePath, String... columns) throws Exception {
 	        Reader reader = new FileReader(filePath);
 	        Iterable<CSVRecord> records = CSVFormat.DEFAULT
 	                .withFirstRecordAsHeader()
 	                .parse(reader);
-	       // int currentIndex = 0;
 
 	        List<Object[]> data = new ArrayList<>();
 	        for (CSVRecord record : records) {
-	            String username = record.get("username");
-	            String password = record.get("password");
-	            data.add(new Object[]{username, password});
+	            List<String> row = new ArrayList<>();
+	            for (String column : columns) {
+	                row.add(record.get(column));  // Read each requested column
+	            }
+	            data.add(row.toArray(new String[0])); // Convert List to Array
 	        }
 
 	        return data.iterator();
 	    }
-   
+	 
 }
 

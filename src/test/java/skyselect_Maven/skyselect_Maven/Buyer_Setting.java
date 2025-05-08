@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 
@@ -12,6 +13,7 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import java.io.File;
+import java.util.Iterator;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -22,14 +24,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.devtools.v118.page.Page;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Buyer_Setting extends BaseTest_Buyer {
 	//WebDriver driver= null; 
+	
 	public WebElementsPage webElementsPage;
-	@Test (enabled = true)
+	@Test (enabled = false)
 	public void verify_All_Pages_Buyer() throws InterruptedException {
 		
 		// Overview Dashboard
@@ -46,8 +50,17 @@ public class Buyer_Setting extends BaseTest_Buyer {
 		
 		// RFQ Dashboard
 		WebElement link_rfqDashboard = driver.findElement(By.xpath("//li[@class='el-sub-menu sub-menu']"));
+		
+		
 		String url_expected_rfqDashboard = "https://demo.skyselect.com/db/tender/purchases";
-		driver.get(url_expected_rfqDashboard);
+		//driver.get(url_expected_rfqDashboard);
+		link_rfqDashboard.click();
+		
+		if (driver.findElement(By.xpath("//span[normalize-space()='RFQs']")).isDisplayed())
+		{
+			driver.findElement(By.xpath("//span[normalize-space()='RFQs']")).click();
+		}
+		
 		driver.getTitle();
 		Thread.sleep(2000);
 		String url_actual_rfqDashboard = driver.getCurrentUrl();
@@ -167,7 +180,7 @@ public class Buyer_Setting extends BaseTest_Buyer {
 	 	  
   }
   //General tab	
-  @Test(enabled = false)
+  @Test(enabled = true)
   public void general_setting() throws InterruptedException{
 	  
 	  Thread.sleep(1000);
@@ -178,40 +191,21 @@ public class Buyer_Setting extends BaseTest_Buyer {
 	  
 	  
   } 
-  
-  
-	
-
-//  @BeforeMethod
-//  public void beforeMethod() throws InterruptedException {
-//	  
-//	  
-//  }
-
-  @AfterMethod
-  public void afterMethod() {
+  @DataProvider(name = "partData")
+  public static Iterator<Object[]> loginDataProvider() throws Exception {
+      return data_read.readCSVData("test_data/data.csv","partno","description");
   }
-
-//  @BeforeClass
-//  public void beforeClass() throws InterruptedException {
-//	  WebDriverManager.chromedriver().setup();
-//	  
-//	  driver= new ChromeDriver();
-//	  driver.manage().window().maximize();
-//	  
-//	  driver.manage().deleteAllCookies();
-//	  
-//	  driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-//	  driver.get("https://demo.skyselect.com");
-//	  webElementsPage = new WebElementsPage(driver);
-//	  webElementsPage.Login("sales@airindia.com", "Test@123");
-//  
-//	  
-//
-//  }
-
-  @AfterClass
-  public void afterClass() {
+ 	
+  
+  @Test(enabled = true,dataProvider = "partData") //,dataProviderClass = BaseTest_Buyer.class
+  public void data_check(String partno,String description)
+  {
+	  //System.out.println(username);
+	  //System.out.println(password);
+	  System.out.println(partno);
+	  //System.out.println(qty);
+	  System.out.println(description);
+	  
   }
 
 }

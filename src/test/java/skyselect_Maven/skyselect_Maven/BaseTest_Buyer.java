@@ -25,6 +25,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 
@@ -36,10 +37,18 @@ public class BaseTest_Buyer {
 	protected String testcaseId;
 	
 	
+	
+	
  @DataProvider(name = "loginData")
- public static Iterator<Object[]> loginDataProvider() throws Exception {
-     return data_read.readCSVData("test_data/data.csv");
+ public static Iterator<Object[]> loginData() throws Exception {
+     return data_read.readCSVData("test_data/data.csv","username","password");
  }
+ 
+ @DataProvider(name = "partData")
+ public static Iterator<Object[]> partsData() throws Exception {
+     return data_read.readCSVData("test_data/data.csv","partno","description","qty");
+ }
+	
 	
    
   @Test (enabled = true, dataProvider ="loginData")
@@ -79,12 +88,13 @@ public class BaseTest_Buyer {
 	  driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	  driver.get("https://demo.skyselect.com");
 	  
+	  
   }
 
   @AfterClass
   public void afterClass() { 	
 	  System.out.println("Check After Class");
-	  driver.quit();
+	  //driver.quit();
   }
   @BeforeMethod
   public void beforeMethod() {

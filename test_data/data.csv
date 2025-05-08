@@ -1,2 +1,2 @@
-username,password
-sales@airindia.com,Test@123
+username,password,partno,description,qty
+sales@airindia.com,Test@123,DK120,BOLT,5

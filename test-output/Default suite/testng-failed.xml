@@ -3,16 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="skyselect_Maven.skyselect_Maven.Buyer_Setting">
+      <class name="skyselect_Maven.skyselect_Maven.Buyer_Demo">
         <methods>
           <include name="addResultToTestRail"/>
           <include name="beforeMethod"/>
-          <include name="afterMethod"/>
-          <include name="afterClass"/>
+          <include name="rfq_check"/>
+          <include name="qc_check"/>
+          <include name="qc_action_1"/>
+          <include name="create_rfq" invocation-numbers="0"/>
           <include name="beforeClass"/>
-          <include name="verify_All_Pages_Buyer"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- skyselect_Maven.skyselect_Maven.Buyer_Setting -->
+      </class> <!-- skyselect_Maven.skyselect_Maven.Buyer_Demo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
