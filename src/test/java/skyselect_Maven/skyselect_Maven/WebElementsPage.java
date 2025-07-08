@@ -83,5 +83,9 @@ public class WebElementsPage {
     	return text_location;
     }
     
+    public WebElement getOrder_link() {
+    	return lnk_OrderDashboard;
+    }
+    
   
 }

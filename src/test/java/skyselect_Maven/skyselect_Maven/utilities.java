@@ -31,11 +31,16 @@ public class utilities {
         js.executeScript("window.scrollTo(0, 0)");
         
     }
-	public void scrollDown() {
+	public void scrollDownMax() {
 	        // Scroll down
 	        JavascriptExecutor js = (JavascriptExecutor) driver;
 	        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 	    }
+	public void scrollDown() {
+        // Scroll down
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0,300)");
+    }
 	
 	public void takescreenshot(String fileName)
 	{

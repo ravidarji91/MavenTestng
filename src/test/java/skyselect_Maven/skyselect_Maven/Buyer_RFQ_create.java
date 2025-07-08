@@ -16,6 +16,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.io.File;
 import java.time.Duration;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -33,7 +34,7 @@ import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Buyer_Demo extends BaseTest_Buyer  {
+public class Buyer_RFQ_create extends BaseTest_Buyer  {
 	//WebDriver driver;
 	//WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(3));
 	public WebElementsPage webElementsPage; 
@@ -55,7 +56,7 @@ public class Buyer_Demo extends BaseTest_Buyer  {
   } 
   
   
-  @Test(enabled = true,dataProvider = "partData",dataProviderClass = BaseTest_Buyer.class) //dependsOnMethods = {"buyerlogin"}
+  @Test(enabled = true,dataProvider = "partData",dataProviderClass = BaseTest_Buyer.class,priority = 1) //dependsOnMethods = {"buyerlogin"}
   public void create_rfq(String partno,String description,String qty) throws InterruptedException {
 	  		testcaseId= "9992";
 	  		webElementsPage = new WebElementsPage(driver);
@@ -200,7 +201,7 @@ public class Buyer_Demo extends BaseTest_Buyer  {
 		    }		    
 	  
   }
-  @Test(enabled = true,dependsOnMethods = {"create_rfq"})
+  @Test(enabled = true,dependsOnMethods = {"create_rfq"},priority = 2)
   public void rfq_check() {
 	  testcaseId= "9993";
 	  // Define explicit wait
@@ -214,7 +215,7 @@ public class Buyer_Demo extends BaseTest_Buyer  {
 	 
   }
   
-  @Test(enabled = true,dependsOnMethods = {"rfq_check"}) 
+  @Test(enabled = true,dependsOnMethods = {"rfq_check"},priority = 3) 
 	  public void qc_check() { 
 	  driver.get(tender_link);  
 	  driver.navigate().refresh();	
@@ -222,15 +223,44 @@ public class Buyer_Demo extends BaseTest_Buyer  {
 	  Reporter.log(tender_link +" Opened",true );
 	  
 	  }
-  @Test (enabled = true,dependsOnMethods = {"rfq_check"})
-  public void qc_action_1() {
+  @Test (enabled = true,dependsOnMethods = {"rfq_check"},priority = 4)
+  public void qc_action_menu_Check() {
+	 
 	  
+	  //verify QC element
 	  WebElement qc_part= driver.findElement(By.xpath("//div[@class='label-text']"));
 	  assert qc_part.isDisplayed();
-	  System.out.println(qc_part.getText());	  
+	  System.out.println(qc_part.getText());
+	  
+	  List<WebElement> action_list= driver.findElements(By.xpath("//div[contains(@class, 'actions-bar')]//button[contains(@class, 'button-element white')]"));
+	  // Assert that elements exist
+	      if (!action_list.isEmpty()) {
+	          System.out.println("Found " + action_list.size() + " buttons.");
+	          for (WebElement button : action_list) {
+	              System.out.println("Button Text: " + button.getText());
+	              Reporter.log("Buttons Are : " + button.getText());
+	          }
+	      } else {
+	          System.out.println("No buttons found!");
+	      	}      
+ 
+  	}
+  @Test(enabled =true,priority = 6)
+  public void qc_parts_validate() {
 	  
 	  
+	  // For Parts list:  //div[contains(@class,'quote-item-header')]
+      // For Part number:  //div[contains(@class,'quote-item-header')]//div[contains(@class,'quote-item-data part-number has-description')]
+     // For Part Data: //div[contains(@class,'quote-item-header')]//div[contains(@class,'quote-item-data-container')] 
+
   }
+  
+  
+  
+  // For Parts list:  //div[contains(@class,'quote-item-header')]
+  // For Part number:  //div[contains(@class,'quote-item-header')]//div[contains(@class,'quote-item-data part-number has-description')]
+ // For Part Data: //div[contains(@class,'quote-item-header')]//div[contains(@class,'quote-item-data-container')] 
+
   }
 
   
