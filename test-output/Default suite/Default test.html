@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jul 08 18:50:01 IST 2025</td>
+<td>Started on:</td><td>Wed Jul 16 19:47:10 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>55 seconds (55337 ms)</td>
+<tr><td>Total time:</td><td>49 seconds (49961 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,121 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='skyselect_Maven.skyselect_Maven.Buyer_Order_create.login()'><b>login</b><br>Test class: skyselect_Maven.skyselect_Maven.Buyer_Order_create<br>Parameters: sales@airindia.com, Test@123</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Email&apos;]&quot;}
+  (Session info: chrome=138.0.7204.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f2b3c99fb5cc8561e4f4ca41f56f7134, findElement {using=xpath, value=//input[@placeholder=&apos;Email&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\RAVI-S~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56950}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56950/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f2b3c99fb5cc8561e4f4ca41f56f7134
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at skyselect_Maven.skyselect_Maven.BaseTest_Buyer.login(BaseTest_Buyer.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2113273959", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2113273959'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Email&apos;]&quot;}
+  (Session info: chrome=138.0.7204.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f2b3c99fb5cc8561e4f4ca41f56f7134, findElement {using=xpath, value=//input[@placeholder=&apos;Email&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\RAVI-S~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56950}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56950/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f2b3c99fb5cc8561e4f4ca41f56f7134
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at skyselect_Maven.skyselect_Maven.BaseTest_Buyer.login(BaseTest_Buyer.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>skyselect_Maven.skyselect_Maven.Buyer_Order_create@2df3b89c</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,66 +191,109 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='skyselect_Maven.skyselect_Maven.Buyer_rfq_check.tab_req_detail()'><b>tab_req_detail</b><br>Test class: skyselect_Maven.skyselect_Maven.Buyer_rfq_check<br/>
-<a href="#Output-1041611526" onClick='toggleBox("Output-1041611526", this, "Show output", "Hide output");'>Show output</a>
+<td title='skyselect_Maven.skyselect_Maven.Buyer_Order_create.order_draft()'><b>order_draft</b><br>Test class: skyselect_Maven.skyselect_Maven.Buyer_Order_create<br/>
+<a href="#Output-1293389141" onClick='toggleBox("Output-1293389141", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1041611526" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1041611526">
-Request Details Open<br/>
-RFQ type
-Outright purchases<br/>
-Priority
-Routine<br/>
-Buyer
-Buyer, Air India<br/>
-Team<br/>
-Folder
-Buyer<br/>
-Location
-Lennart Meri Tallinn Airport<br/>
-Reference number
-REF_123<br/>
-Published
-Jun 30, 2025 03:32<br/>
-End time
-Jun 30, 2025 04:41<br/>
-Original end time
-Jun 30, 2025 04:40<br/>
-Tail number
-TL123<br/>
+<a href="#Output-1293389141" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1293389141">
+Order Dashboard opened<br/>
+Order Draft Opened<br/>
 </div>
 </td>
 <td></td>
-<td>8</td>
-<td>skyselect_Maven.skyselect_Maven.Buyer_rfq_check@131ef10</td></tr>
+<td>17</td>
+<td>skyselect_Maven.skyselect_Maven.Buyer_Order_create@2df3b89c</td></tr>
 <tr>
-<td title='skyselect_Maven.skyselect_Maven.Buyer_rfq_check.login()'><b>login</b><br>Test class: skyselect_Maven.skyselect_Maven.Buyer_rfq_check<br>Parameters: sales@airindia.com, Test@123</td>
-<td></td>
-<td>5</td>
-<td>skyselect_Maven.skyselect_Maven.Buyer_rfq_check@131ef10</td></tr>
-<tr>
-<td title='skyselect_Maven.skyselect_Maven.Buyer_rfq_check.quote_verify()'><b>quote_verify</b><br>Test class: skyselect_Maven.skyselect_Maven.Buyer_rfq_check<br/>
-<a href="#Output-1188445627" onClick='toggleBox("Output-1188445627", this, "Show output", "Hide output");'>Show output</a>
+<td title='skyselect_Maven.skyselect_Maven.Buyer_Order_create.order_part()'><b>order_part</b><br>Test class: skyselect_Maven.skyselect_Maven.Buyer_Order_create<br/>
+<a href="#Output-793808700" onClick='toggleBox("Output-793808700", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1188445627" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1188445627">
-Quote is Clicked<br/>
-Quote is from: BEST PART
-[ABCD]| Quote Type :This quote is from an exclusive contract catalog<br/>
-Quote is Clicked<br/>
-Quote is from: PROPONENT| Quote Type :This quote is from a price catalog<br/>
-Quote is Clicked<br/>
-Quote is from: AIRBUS| Quote Type :This quote is from a price catalog<br/>
-Quote is Clicked<br/>
-Quote is from: AIRBUS| Quote Type :This quote is from a price catalog<br/>
-Quote is Clicked<br/>
-Quote is from: AIRBUS| Quote Type :This quote is from a price catalog<br/>
-Skyselect  Prefered Quote is Available<br/>
+<a href="#Output-793808700" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-793808700">
+Part Row:<br/>
+  → div: PART NUMBER
+*<br/>
+  → span: PART NUMBER<br/>
+  → div: *<br/>
+  → input: DK120<br/>
+  → div: CPO
+15071-1<br/>
+  → div: CPO<br/>
+  → div: 15071-1<br/>
+  → div: MFR<br/>
+  → div: DESCRIPTION<br/>
+  → input: BOLT<br/>
+  → div: QTY
+*<br/>
+  → span: QTY<br/>
+  → input: 5<br/>
+  → div: UOM
+EA<br/>
+  → div: UOM<br/>
+  → div: EA<br/>
+  → div: UNIT PRICE
+*<br/>
+  → span: UNIT PRICE<br/>
+  → input: 100<br/>
+  → div: CONDITION
+*
+New<br/>
+  → div: CONDITION
+*<br/>
+  → div: New<br/>
+  → div: SERIAL NUMBER<br/>
+  → div: SHIP BY DATE
+*
+Based on quoted LT<br/>
+  → div: SHIP BY DATE
+*<br/>
+  → input: 2025-07-16<br/>
+  → div: Based on quoted LT<br/>
+  → div: NEED BY DATE
+*
+Past due, based on EDD<br/>
+  → div: NEED BY DATE
+*<br/>
+  → div: Past due, based on EDD<br/>
+  → div: REQUISITION NO<br/>
+  → div: NOTES<br/>
+  → div: FEES
++<br/>
+  → div: FEES<br/>
+  → div: +<br/>
+  → div: $500.00<br/>
+Part Data: PART NUMBER
+*
+CPO
+15071-1
+MFR
+DESCRIPTION
+QTY
+*
+UOM
+EA
+UNIT PRICE
+*
+CONDITION
+*
+New
+SERIAL NUMBER
+SHIP BY DATE
+*
+Based on quoted LT
+NEED BY DATE
+*
+Past due, based on EDD
+REQUISITION NO
+NOTES
+FEES
++
+ $500.00
+ <br/>
 </div>
 </td>
 <td></td>
-<td>30</td>
-<td>skyselect_Maven.skyselect_Maven.Buyer_rfq_check@131ef10</td></tr>
+<td>6</td>
+<td>skyselect_Maven.skyselect_Maven.Buyer_Order_create@2df3b89c</td></tr>
 </table><p>
 </body>
 </html>

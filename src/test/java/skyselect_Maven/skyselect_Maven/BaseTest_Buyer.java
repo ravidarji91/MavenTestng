@@ -79,7 +79,7 @@ public class BaseTest_Buyer {
   }
 
   @BeforeClass
-  public void beforeClass() {
+  public void beforeClass() throws InterruptedException {
 	  WebDriverManager.chromedriver().setup();
 	  driver= new ChromeDriver();
 	  driver.manage().window().maximize();
@@ -87,13 +87,14 @@ public class BaseTest_Buyer {
 	  
 	  driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	  driver.get("https://demo.skyselect.com");
-	  
+	  login("sales@airindia.com", "Test@123");
 	  
   }
 
   @AfterClass
   public void afterClass() { 	
 	  System.out.println("Check After Class");
+	  
 	  //driver.quit();
   }
   @BeforeMethod

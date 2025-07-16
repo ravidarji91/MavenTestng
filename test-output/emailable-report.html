@@ -9,23 +9,104 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">55,337</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">49,961</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">skyselect_Maven.skyselect_Maven.Buyer_rfq_check</td><td><a href="#m0">login</a></td><td rowspan="1">1751980808131</td><td rowspan="1">5117</td></tr><tr class="passedeven"><td><a href="#m1">quote_verify</a></td><td rowspan="1">1751980814735</td><td rowspan="1">30812</td></tr><tr class="passedeven"><td><a href="#m2">tab_req_detail</a></td><td rowspan="1">1751980846629</td><td rowspan="1">8621</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">skyselect_Maven.skyselect_Maven.Buyer_Order_create</td><td><a href="#m0">login</a></td><td rowspan="1">1752675442984</td><td rowspan="1">10071</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">skyselect_Maven.skyselect_Maven.Buyer_Order_create</td><td><a href="#m1">order_draft</a></td><td rowspan="1">1752675454823</td><td rowspan="1">17170</td></tr><tr class="passedeven"><td><a href="#m2">order_part</a></td><td rowspan="1">1752675473049</td><td rowspan="1">6146</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">skyselect_Maven.skyselect_Maven.Buyer_rfq_check#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>sales@airindia.com</td><td>Test@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">skyselect_Maven.skyselect_Maven.Buyer_rfq_check#quote_verify</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Quote is Clicked<br/>Quote is from: BEST PART
-[ABCD]| Quote Type :This quote is from an exclusive contract catalog<br/>Quote is Clicked<br/>Quote is from: PROPONENT| Quote Type :This quote is from a price catalog<br/>Quote is Clicked<br/>Quote is from: AIRBUS| Quote Type :This quote is from a price catalog<br/>Quote is Clicked<br/>Quote is from: AIRBUS| Quote Type :This quote is from a price catalog<br/>Quote is Clicked<br/>Quote is from: AIRBUS| Quote Type :This quote is from a price catalog<br/>Skyselect  Prefered Quote is Available</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">skyselect_Maven.skyselect_Maven.Buyer_rfq_check#tab_req_detail</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Request Details Open<br/>RFQ type
-Outright purchases<br/>Priority
-Routine<br/>Buyer
-Buyer, Air India<br/>Team<br/>Folder
-Buyer<br/>Location
-Lennart Meri Tallinn Airport<br/>Reference number
-REF_123<br/>Published
-Jun 30, 2025 03:32<br/>End time
-Jun 30, 2025 04:41<br/>Original end time
-Jun 30, 2025 04:40<br/>Tail number
-TL123</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">skyselect_Maven.skyselect_Maven.Buyer_Order_create#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>sales@airindia.com</td><td>Test@123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Email&apos;]&quot;}
+  (Session info: chrome=138.0.7204.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f2b3c99fb5cc8561e4f4ca41f56f7134, findElement {using=xpath, value=//input[@placeholder=&apos;Email&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\RAVI-S~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56950}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56950/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f2b3c99fb5cc8561e4f4ca41f56f7134
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at skyselect_Maven.skyselect_Maven.BaseTest_Buyer.login(BaseTest_Buyer.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">skyselect_Maven.skyselect_Maven.Buyer_Order_create#order_draft</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Order Dashboard opened<br/>Order Draft Opened</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">skyselect_Maven.skyselect_Maven.Buyer_Order_create#order_part</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Part Row:<br/>  → div: PART NUMBER
+*<br/>  → span: PART NUMBER<br/>  → div: *<br/>  → input: DK120<br/>  → div: CPO
+15071-1<br/>  → div: CPO<br/>  → div: 15071-1<br/>  → div: MFR<br/>  → div: DESCRIPTION<br/>  → input: BOLT<br/>  → div: QTY
+*<br/>  → span: QTY<br/>  → input: 5<br/>  → div: UOM
+EA<br/>  → div: UOM<br/>  → div: EA<br/>  → div: UNIT PRICE
+*<br/>  → span: UNIT PRICE<br/>  → input: 100<br/>  → div: CONDITION
+*
+New<br/>  → div: CONDITION
+*<br/>  → div: New<br/>  → div: SERIAL NUMBER<br/>  → div: SHIP BY DATE
+*
+Based on quoted LT<br/>  → div: SHIP BY DATE
+*<br/>  → input: 2025-07-16<br/>  → div: Based on quoted LT<br/>  → div: NEED BY DATE
+*
+Past due, based on EDD<br/>  → div: NEED BY DATE
+*<br/>  → div: Past due, based on EDD<br/>  → div: REQUISITION NO<br/>  → div: NOTES<br/>  → div: FEES
++<br/>  → div: FEES<br/>  → div: +<br/>  → div: $500.00<br/>Part Data: PART NUMBER
+*
+CPO
+15071-1
+MFR
+DESCRIPTION
+QTY
+*
+UOM
+EA
+UNIT PRICE
+*
+CONDITION
+*
+New
+SERIAL NUMBER
+SHIP BY DATE
+*
+Based on quoted LT
+NEED BY DATE
+*
+Past due, based on EDD
+REQUISITION NO
+NOTES
+FEES
++
+ $500.00
+ </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

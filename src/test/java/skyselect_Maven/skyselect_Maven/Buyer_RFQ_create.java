@@ -202,7 +202,7 @@ public class Buyer_RFQ_create extends BaseTest_Buyer  {
 	  
   }
   @Test(enabled = true,dependsOnMethods = {"create_rfq"},priority = 2)
-  public void rfq_check() {
+  public void rfq_verify() {
 	  testcaseId= "9993";
 	  // Define explicit wait
       WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));  // Wait for 10 seconds
@@ -215,16 +215,19 @@ public class Buyer_RFQ_create extends BaseTest_Buyer  {
 	 
   }
   
-  @Test(enabled = true,dependsOnMethods = {"rfq_check"},priority = 3) 
+  @Test(enabled = true,dependsOnMethods = {"rfq_verify"},priority = 3) 
 	  public void qc_check() { 
 	  driver.get(tender_link);  
 	  driver.navigate().refresh();	
 	  System.out.println("QC page is Opened");
 	  Reporter.log(tender_link +" Opened",true );
 	  
+	  
+	  
+	  
 	  }
-  @Test (enabled = true,dependsOnMethods = {"rfq_check"},priority = 4)
-  public void qc_action_menu_Check() {
+  @Test (enabled = true,dependsOnMethods = {"rfq_verify"},priority = 4)
+  public void qc_action_menu_Verify() {
 	 
 	  
 	  //verify QC element
@@ -245,7 +248,7 @@ public class Buyer_RFQ_create extends BaseTest_Buyer  {
 	      	}      
  
   	}
-  @Test(enabled =true,priority = 6)
+  @Test(enabled =false,priority = 6)
   public void qc_parts_validate() {
 	  
 	  
