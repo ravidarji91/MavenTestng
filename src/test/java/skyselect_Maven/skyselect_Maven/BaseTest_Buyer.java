@@ -6,10 +6,15 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.opencsv.exceptions.CsvValidationException;
 import com.test.TestRailManager.TestrailManager;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import utility.ExtentReportManager;
+import utility.ReporterLogger;
+import utility.utilities;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -33,8 +38,10 @@ import org.testng.annotations.AfterMethod;
 
 public class BaseTest_Buyer {
 	WebDriver driver;
+	utilities ul=new utilities();
 	public WebElementsPage webElementsPage; 
 	protected String testcaseId;
+	ExtentTest test;
 	
 	
 	
@@ -69,7 +76,7 @@ public class BaseTest_Buyer {
 	  WebElement pagetitle=driver.findElement(By.xpath("//div[@class='sub-menu-title']"));
 	  Thread.sleep(500);
 	  assert pagetitle.isDisplayed(); 
-	
+	  test.fail("Step failed", MediaEntityBuilder.createScreenCaptureFromPath("screenshot.png").build());
   }
 
 
@@ -80,26 +87,32 @@ public class BaseTest_Buyer {
 
   @BeforeClass
   public void beforeClass() throws InterruptedException {
+	  ReporterLogger.startLogging();
 	  WebDriverManager.chromedriver().setup();
 	  driver= new ChromeDriver();
 	  driver.manage().window().maximize();
 	  driver.manage().deleteAllCookies();
-	  
+	  test = ExtentReportManager.createTest("Skyselect DEMO Check");
 	  driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	  driver.get("https://demo.skyselect.com");
-	  login("sales@airindia.com", "Test@123");
+	  //login("sales@airindia.com", "Test@123");
 	  
+	 
+
   }
 
   @AfterClass
   public void afterClass() { 	
 	  System.out.println("Check After Class");
-	  
+	  ReporterLogger.stopLogging();
+	  ExtentReportManager.flushReport();
+
 	  //driver.quit();
   }
   @BeforeMethod
   public void beforeMethod() {
 	  System.out.println("Check before Method in Run");
+	  
 	  
   }
   @AfterMethod
@@ -110,6 +123,7 @@ public class BaseTest_Buyer {
 	  else if (result.getStatus() == ITestResult.FAILURE) {
 		  TestrailManager.addResultForTestCase(testcaseId,TestrailManager.TEST_CASE_FAIL_STATUS, 
 				  "Test got Failed" + result.getName()+": FAILED");
+		  
 	}
 	  
   } 	

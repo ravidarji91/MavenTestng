@@ -1,183 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Order Dashboard opened]]>
+      <![CDATA[RFQ Dashboard opened]]>
     </line>
     <line>
-      <![CDATA[Order Draft Opened]]>
+      <![CDATA[[2025-07-17 16:20:39] RFQ Dashboard Opened]]>
     </line>
     <line>
-      <![CDATA[Part Row:]]>
+      <![CDATA[Tender Opened]]>
     </line>
     <line>
-      <![CDATA[  → div: PART NUMBER
-*]]>
+      <![CDATA[[2025-07-17 16:21:01] Tender Opened]]>
     </line>
     <line>
-      <![CDATA[  → span: PART NUMBER]]>
+      <![CDATA[Request Details Open]]>
     </line>
     <line>
-      <![CDATA[  → div: *]]>
+      <![CDATA[[2025-07-17 16:21:02] Request Details Open]]>
     </line>
     <line>
-      <![CDATA[  → input: DK120]]>
+      <![CDATA[RFQ type
+Outright purchases]]>
     </line>
     <line>
-      <![CDATA[  → div: CPO
-15071-1]]>
+      <![CDATA[[2025-07-17 16:21:03] RFQ type
+Outright purchases]]>
     </line>
     <line>
-      <![CDATA[  → div: CPO]]>
+      <![CDATA[Priority
+Routine]]>
     </line>
     <line>
-      <![CDATA[  → div: 15071-1]]>
+      <![CDATA[[2025-07-17 16:21:03] Priority
+Routine]]>
     </line>
     <line>
-      <![CDATA[  → div: MFR]]>
+      <![CDATA[Buyer
+Buyer, Air India]]>
     </line>
     <line>
-      <![CDATA[  → div: DESCRIPTION]]>
+      <![CDATA[[2025-07-17 16:21:04] Buyer
+Buyer, Air India]]>
     </line>
     <line>
-      <![CDATA[  → input: BOLT]]>
+      <![CDATA[Team]]>
     </line>
     <line>
-      <![CDATA[  → div: QTY
-*]]>
+      <![CDATA[[2025-07-17 16:21:04] Team]]>
     </line>
     <line>
-      <![CDATA[  → span: QTY]]>
+      <![CDATA[Folder
+Buyer]]>
     </line>
     <line>
-      <![CDATA[  → input: 5]]>
+      <![CDATA[[2025-07-17 16:21:05] Folder
+Buyer]]>
     </line>
     <line>
-      <![CDATA[  → div: UOM
-EA]]>
+      <![CDATA[Location
+Lennart Meri Tallinn Airport]]>
     </line>
     <line>
-      <![CDATA[  → div: UOM]]>
+      <![CDATA[[2025-07-17 16:21:05] Location
+Lennart Meri Tallinn Airport]]>
     </line>
     <line>
-      <![CDATA[  → div: EA]]>
+      <![CDATA[Reference number
+REF_123]]>
     </line>
     <line>
-      <![CDATA[  → div: UNIT PRICE
-*]]>
+      <![CDATA[[2025-07-17 16:21:06] Reference number
+REF_123]]>
     </line>
     <line>
-      <![CDATA[  → span: UNIT PRICE]]>
+      <![CDATA[Published
+Jul 8, 2025 23:11]]>
     </line>
     <line>
-      <![CDATA[  → input: 100]]>
+      <![CDATA[[2025-07-17 16:21:06] Published
+Jul 8, 2025 23:11]]>
     </line>
     <line>
-      <![CDATA[  → div: CONDITION
-*
-New]]>
+      <![CDATA[End time
+Jul 9, 2025 23:22]]>
     </line>
     <line>
-      <![CDATA[  → div: CONDITION
-*]]>
+      <![CDATA[[2025-07-17 16:21:07] End time
+Jul 9, 2025 23:22]]>
     </line>
     <line>
-      <![CDATA[  → div: New]]>
+      <![CDATA[Original end time
+Jul 9, 2025 23:20]]>
     </line>
     <line>
-      <![CDATA[  → div: SERIAL NUMBER]]>
+      <![CDATA[[2025-07-17 16:21:07] Original end time
+Jul 9, 2025 23:20]]>
     </line>
     <line>
-      <![CDATA[  → div: SHIP BY DATE
-*
-Based on quoted LT]]>
+      <![CDATA[Tail number
+TL123]]>
     </line>
     <line>
-      <![CDATA[  → div: SHIP BY DATE
-*]]>
-    </line>
-    <line>
-      <![CDATA[  → input: 2025-07-16]]>
-    </line>
-    <line>
-      <![CDATA[  → div: Based on quoted LT]]>
-    </line>
-    <line>
-      <![CDATA[  → div: NEED BY DATE
-*
-Past due, based on EDD]]>
-    </line>
-    <line>
-      <![CDATA[  → div: NEED BY DATE
-*]]>
-    </line>
-    <line>
-      <![CDATA[  → div: Past due, based on EDD]]>
-    </line>
-    <line>
-      <![CDATA[  → div: REQUISITION NO]]>
-    </line>
-    <line>
-      <![CDATA[  → div: NOTES]]>
-    </line>
-    <line>
-      <![CDATA[  → div: FEES
-+]]>
-    </line>
-    <line>
-      <![CDATA[  → div: FEES]]>
-    </line>
-    <line>
-      <![CDATA[  → div: +]]>
-    </line>
-    <line>
-      <![CDATA[  → div: $500.00]]>
-    </line>
-    <line>
-      <![CDATA[Part Data: PART NUMBER
-*
-CPO
-15071-1
-MFR
-DESCRIPTION
-QTY
-*
-UOM
-EA
-UNIT PRICE
-*
-CONDITION
-*
-New
-SERIAL NUMBER
-SHIP BY DATE
-*
-Based on quoted LT
-NEED BY DATE
-*
-Past due, based on EDD
-REQUISITION NO
-NOTES
-FEES
-+
- $500.00
- ]]>
+      <![CDATA[[2025-07-17 16:21:08] Tail number
+TL123]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-07-16T19:47:10 IST" name="Default suite" finished-at="2025-07-16T19:48:00 IST" duration-ms="49961">
+  <suite started-at="2025-07-17T16:20:25 IST" name="Default suite" finished-at="2025-07-17T16:21:10 IST" duration-ms="44784">
     <groups>
     </groups>
-    <test started-at="2025-07-16T19:47:10 IST" name="Default test" finished-at="2025-07-16T19:48:00 IST" duration-ms="49961">
-      <class name="skyselect_Maven.skyselect_Maven.Buyer_Order_create">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Order_create@2df3b89c]" started-at="2025-07-16T19:47:10 IST" name="beforeClass" finished-at="2025-07-16T19:47:22 IST" duration-ms="12474" status="PASS">
+    <test started-at="2025-07-17T16:20:25 IST" name="Default test" finished-at="2025-07-17T16:21:10 IST" duration-ms="44784">
+      <class name="skyselect_Maven.skyselect_Maven.Buyer_RFQ_check">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_RFQ_check@fa4c865]" started-at="2025-07-17T16:20:25 IST" name="beforeClass" finished-at="2025-07-17T16:20:32 IST" duration-ms="6904" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Order_create@2df3b89c]" started-at="2025-07-16T19:47:22 IST" name="setup" finished-at="2025-07-16T19:47:22 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Order_create@2df3b89c]" started-at="2025-07-16T19:47:22 IST" name="login" data-provider="loginData" finished-at="2025-07-16T19:47:33 IST" duration-ms="10071" status="FAIL">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_RFQ_check@fa4c865]" started-at="2025-07-17T16:20:32 IST" name="login" data-provider="loginData" finished-at="2025-07-17T16:20:37 IST" duration-ms="4983" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -190,307 +128,152 @@ FEES
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Email']"}
-  (Session info: chrome=138.0.7204.101)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f2b3c99fb5cc8561e4f4ca41f56f7134, findElement {using=xpath, value=//input[@placeholder='Email']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\RAVI-S~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56950}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56950/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f2b3c99fb5cc8561e4f4ca41f56f7134]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Email']"}
-  (Session info: chrome=138.0.7204.101)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f2b3c99fb5cc8561e4f4ca41f56f7134, findElement {using=xpath, value=//input[@placeholder='Email']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\RAVI-S~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56950}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56950/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f2b3c99fb5cc8561e4f4ca41f56f7134
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-at skyselect_Maven.skyselect_Maven.BaseTest_Buyer.login(BaseTest_Buyer.java:61)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Order_create@2df3b89c]" started-at="2025-07-16T19:47:22 IST" name="beforeMethod" finished-at="2025-07-16T19:47:22 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_RFQ_check@fa4c865]" started-at="2025-07-17T16:20:32 IST" name="beforeMethod" finished-at="2025-07-17T16:20:32 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Order_create@2df3b89c]" started-at="2025-07-16T19:47:33 IST" name="afterMethod" finished-at="2025-07-16T19:47:33 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="addResultToTestRail(org.testng.ITestResult)[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Order_create@2df3b89c]" started-at="2025-07-16T19:47:33 IST" name="addResultToTestRail" finished-at="2025-07-16T19:47:34 IST" duration-ms="1763" status="PASS">
+        <test-method is-config="true" signature="addResultToTestRail(org.testng.ITestResult)[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_RFQ_check@fa4c865]" started-at="2025-07-17T16:20:37 IST" name="addResultToTestRail" finished-at="2025-07-17T16:20:38 IST" duration-ms="1449" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login status=FAILURE method=BaseTest_Buyer.login(java.lang.String,java.lang.String)[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Order_create@2df3b89c] output={null}]]]>
+                <![CDATA[[TestResult name=login status=SUCCESS method=BaseTest_Buyer.login(java.lang.String,java.lang.String)[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_RFQ_check@fa4c865] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addResultToTestRail -->
-        <test-method signature="order_draft()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Order_create@2df3b89c]" started-at="2025-07-16T19:47:34 IST" name="order_draft" finished-at="2025-07-16T19:47:51 IST" duration-ms="17170" status="PASS">
+        <test-method signature="tab_req_detail()[pri:1, instance:skyselect_Maven.skyselect_Maven.Buyer_RFQ_check@fa4c865]" started-at="2025-07-17T16:20:38 IST" name="tab_req_detail" finished-at="2025-07-17T16:21:08 IST" duration-ms="29779" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Order Dashboard opened]]>
+              <![CDATA[RFQ Dashboard opened]]>
             </line>
             <line>
-              <![CDATA[Order Draft Opened]]>
+              <![CDATA[[2025-07-17 16:20:39] RFQ Dashboard Opened]]>
+            </line>
+            <line>
+              <![CDATA[Tender Opened]]>
+            </line>
+            <line>
+              <![CDATA[[2025-07-17 16:21:01] Tender Opened]]>
+            </line>
+            <line>
+              <![CDATA[Request Details Open]]>
+            </line>
+            <line>
+              <![CDATA[[2025-07-17 16:21:02] Request Details Open]]>
+            </line>
+            <line>
+              <![CDATA[RFQ type
+Outright purchases]]>
+            </line>
+            <line>
+              <![CDATA[[2025-07-17 16:21:03] RFQ type
+Outright purchases]]>
+            </line>
+            <line>
+              <![CDATA[Priority
+Routine]]>
+            </line>
+            <line>
+              <![CDATA[[2025-07-17 16:21:03] Priority
+Routine]]>
+            </line>
+            <line>
+              <![CDATA[Buyer
+Buyer, Air India]]>
+            </line>
+            <line>
+              <![CDATA[[2025-07-17 16:21:04] Buyer
+Buyer, Air India]]>
+            </line>
+            <line>
+              <![CDATA[Team]]>
+            </line>
+            <line>
+              <![CDATA[[2025-07-17 16:21:04] Team]]>
+            </line>
+            <line>
+              <![CDATA[Folder
+Buyer]]>
+            </line>
+            <line>
+              <![CDATA[[2025-07-17 16:21:05] Folder
+Buyer]]>
+            </line>
+            <line>
+              <![CDATA[Location
+Lennart Meri Tallinn Airport]]>
+            </line>
+            <line>
+              <![CDATA[[2025-07-17 16:21:05] Location
+Lennart Meri Tallinn Airport]]>
+            </line>
+            <line>
+              <![CDATA[Reference number
+REF_123]]>
+            </line>
+            <line>
+              <![CDATA[[2025-07-17 16:21:06] Reference number
+REF_123]]>
+            </line>
+            <line>
+              <![CDATA[Published
+Jul 8, 2025 23:11]]>
+            </line>
+            <line>
+              <![CDATA[[2025-07-17 16:21:06] Published
+Jul 8, 2025 23:11]]>
+            </line>
+            <line>
+              <![CDATA[End time
+Jul 9, 2025 23:22]]>
+            </line>
+            <line>
+              <![CDATA[[2025-07-17 16:21:07] End time
+Jul 9, 2025 23:22]]>
+            </line>
+            <line>
+              <![CDATA[Original end time
+Jul 9, 2025 23:20]]>
+            </line>
+            <line>
+              <![CDATA[[2025-07-17 16:21:07] Original end time
+Jul 9, 2025 23:20]]>
+            </line>
+            <line>
+              <![CDATA[Tail number
+TL123]]>
+            </line>
+            <line>
+              <![CDATA[[2025-07-17 16:21:08] Tail number
+TL123]]>
             </line>
           </reporter-output>
-        </test-method> <!-- order_draft -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Order_create@2df3b89c]" started-at="2025-07-16T19:47:34 IST" name="beforeMethod" finished-at="2025-07-16T19:47:34 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- tab_req_detail -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_RFQ_check@fa4c865]" started-at="2025-07-17T16:20:38 IST" name="beforeMethod" finished-at="2025-07-17T16:20:38 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Order_create@2df3b89c]" started-at="2025-07-16T19:47:51 IST" name="afterMethod" finished-at="2025-07-16T19:47:51 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="addResultToTestRail(org.testng.ITestResult)[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Order_create@2df3b89c]" started-at="2025-07-16T19:47:51 IST" name="addResultToTestRail" finished-at="2025-07-16T19:47:53 IST" duration-ms="1049" status="PASS">
+        <test-method is-config="true" signature="addResultToTestRail(org.testng.ITestResult)[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_RFQ_check@fa4c865]" started-at="2025-07-17T16:21:08 IST" name="addResultToTestRail" finished-at="2025-07-17T16:21:09 IST" duration-ms="1163" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=order_draft status=SUCCESS method=Buyer_Order_create.order_draft()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Order_create@2df3b89c] output=Order Dashboard opened]]]>
+                <![CDATA[[TestResult name=tab_req_detail status=SUCCESS method=Buyer_RFQ_check.tab_req_detail()[pri:1, instance:skyselect_Maven.skyselect_Maven.Buyer_RFQ_check@fa4c865] output=RFQ Dashboard opened]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addResultToTestRail -->
-        <test-method signature="order_part()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Order_create@2df3b89c]" started-at="2025-07-16T19:47:53 IST" name="order_part" finished-at="2025-07-16T19:47:59 IST" depends-on-methods="skyselect_Maven.skyselect_Maven.Buyer_Order_create.order_draft" duration-ms="6146" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Part Row:]]>
-            </line>
-            <line>
-              <![CDATA[  → div: PART NUMBER
-*]]>
-            </line>
-            <line>
-              <![CDATA[  → span: PART NUMBER]]>
-            </line>
-            <line>
-              <![CDATA[  → div: *]]>
-            </line>
-            <line>
-              <![CDATA[  → input: DK120]]>
-            </line>
-            <line>
-              <![CDATA[  → div: CPO
-15071-1]]>
-            </line>
-            <line>
-              <![CDATA[  → div: CPO]]>
-            </line>
-            <line>
-              <![CDATA[  → div: 15071-1]]>
-            </line>
-            <line>
-              <![CDATA[  → div: MFR]]>
-            </line>
-            <line>
-              <![CDATA[  → div: DESCRIPTION]]>
-            </line>
-            <line>
-              <![CDATA[  → input: BOLT]]>
-            </line>
-            <line>
-              <![CDATA[  → div: QTY
-*]]>
-            </line>
-            <line>
-              <![CDATA[  → span: QTY]]>
-            </line>
-            <line>
-              <![CDATA[  → input: 5]]>
-            </line>
-            <line>
-              <![CDATA[  → div: UOM
-EA]]>
-            </line>
-            <line>
-              <![CDATA[  → div: UOM]]>
-            </line>
-            <line>
-              <![CDATA[  → div: EA]]>
-            </line>
-            <line>
-              <![CDATA[  → div: UNIT PRICE
-*]]>
-            </line>
-            <line>
-              <![CDATA[  → span: UNIT PRICE]]>
-            </line>
-            <line>
-              <![CDATA[  → input: 100]]>
-            </line>
-            <line>
-              <![CDATA[  → div: CONDITION
-*
-New]]>
-            </line>
-            <line>
-              <![CDATA[  → div: CONDITION
-*]]>
-            </line>
-            <line>
-              <![CDATA[  → div: New]]>
-            </line>
-            <line>
-              <![CDATA[  → div: SERIAL NUMBER]]>
-            </line>
-            <line>
-              <![CDATA[  → div: SHIP BY DATE
-*
-Based on quoted LT]]>
-            </line>
-            <line>
-              <![CDATA[  → div: SHIP BY DATE
-*]]>
-            </line>
-            <line>
-              <![CDATA[  → input: 2025-07-16]]>
-            </line>
-            <line>
-              <![CDATA[  → div: Based on quoted LT]]>
-            </line>
-            <line>
-              <![CDATA[  → div: NEED BY DATE
-*
-Past due, based on EDD]]>
-            </line>
-            <line>
-              <![CDATA[  → div: NEED BY DATE
-*]]>
-            </line>
-            <line>
-              <![CDATA[  → div: Past due, based on EDD]]>
-            </line>
-            <line>
-              <![CDATA[  → div: REQUISITION NO]]>
-            </line>
-            <line>
-              <![CDATA[  → div: NOTES]]>
-            </line>
-            <line>
-              <![CDATA[  → div: FEES
-+]]>
-            </line>
-            <line>
-              <![CDATA[  → div: FEES]]>
-            </line>
-            <line>
-              <![CDATA[  → div: +]]>
-            </line>
-            <line>
-              <![CDATA[  → div: $500.00]]>
-            </line>
-            <line>
-              <![CDATA[Part Data: PART NUMBER
-*
-CPO
-15071-1
-MFR
-DESCRIPTION
-QTY
-*
-UOM
-EA
-UNIT PRICE
-*
-CONDITION
-*
-New
-SERIAL NUMBER
-SHIP BY DATE
-*
-Based on quoted LT
-NEED BY DATE
-*
-Past due, based on EDD
-REQUISITION NO
-NOTES
-FEES
-+
- $500.00
- ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- order_part -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Order_create@2df3b89c]" started-at="2025-07-16T19:47:53 IST" name="beforeMethod" finished-at="2025-07-16T19:47:53 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Order_create@2df3b89c]" started-at="2025-07-16T19:47:59 IST" name="afterMethod" finished-at="2025-07-16T19:47:59 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="addResultToTestRail(org.testng.ITestResult)[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Order_create@2df3b89c]" started-at="2025-07-16T19:47:59 IST" name="addResultToTestRail" finished-at="2025-07-16T19:48:00 IST" duration-ms="1232" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=order_part status=SUCCESS method=Buyer_Order_create.order_part()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Order_create@2df3b89c] output=Part Row:]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addResultToTestRail -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_Order_create@2df3b89c]" started-at="2025-07-16T19:48:00 IST" name="afterClass" finished-at="2025-07-16T19:48:00 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:skyselect_Maven.skyselect_Maven.Buyer_RFQ_check@fa4c865]" started-at="2025-07-17T16:21:09 IST" name="afterClass" finished-at="2025-07-17T16:21:10 IST" duration-ms="465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- skyselect_Maven.skyselect_Maven.Buyer_Order_create -->
+      </class> <!-- skyselect_Maven.skyselect_Maven.Buyer_RFQ_check -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

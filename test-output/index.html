@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\ravi-skyselect\AppData\Local\Temp\testng-eclipse-818706398\testng-customsuite.xml</span>
+                    <span>C:\Users\ravi-skyselect\AppData\Local\Temp\testng-eclipse-1756617561\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="skyselect_Maven.skyselect_Maven.Buyer_Order_create" class="method navigator-link" hash-for-method="login(sales@airindia.com, Test@123)">login(sales@airindia.com, Test@123)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,12 +103,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="skyselect_Maven.skyselect_Maven.Buyer_Order_create" class="method navigator-link" hash-for-method="order_draft">order_draft</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="skyselect_Maven.skyselect_Maven.Buyer_RFQ_check" class="method navigator-link" hash-for-method="login(sales@airindia.com, Test@123)">login(sales@airindia.com, Test@123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="skyselect_Maven.skyselect_Maven.Buyer_Order_create" class="method navigator-link" hash-for-method="order_part">order_part</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="skyselect_Maven.skyselect_Maven.Buyer_RFQ_check" class="method navigator-link" hash-for-method="tab_req_detail">tab_req_detail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -137,10 +123,10 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+          <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">skyselect_Maven.skyselect_Maven.Buyer_Order_create</span>
+              <img src="passed.png"/>
+              <span class="class-name">skyselect_Maven.skyselect_Maven.Buyer_RFQ_check</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -149,80 +135,13 @@
                   </a> <!-- login(sales@airindia.com, Test@123) -->
                   <span class="method-name">login</span>
                   <span class="parameters">(sales@airindia.com,Test@123)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Email&apos;]&quot;}
-  (Session info: chrome=138.0.7204.101)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f2b3c99fb5cc8561e4f4ca41f56f7134, findElement {using=xpath, value=//input[@placeholder=&apos;Email&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\RAVI-S~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56950}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56950/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f2b3c99fb5cc8561e4f4ca41f56f7134
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at skyselect_Maven.skyselect_Maven.BaseTest_Buyer.login(BaseTest_Buyer.java:61)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
-          <div class="suite-Default_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">skyselect_Maven.skyselect_Maven.Buyer_Order_create</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="order_draft">
-                  </a> <!-- order_draft -->
-                  <span class="method-name">order_draft</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="order_part">
-                  </a> <!-- order_part -->
-                  <span class="method-name">order_part</span>
+                  <a name="tab_req_detail">
+                  </a> <!-- tab_req_detail -->
+                  <span class="method-name">tab_req_detail</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -230,7 +149,7 @@ Session ID: f2b3c99fb5cc8561e4f4ca41f56f7134
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ravi-skyselect\AppData\Local\Temp\testng-eclipse-818706398\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ravi-skyselect\AppData\Local\Temp\testng-eclipse-1756617561\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -239,7 +158,7 @@ Session ID: f2b3c99fb5cc8561e4f4ca41f56f7134
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;skyselect_Maven.skyselect_Maven.Buyer_Order_create&quot;/&gt;
+      &lt;class name=&quot;skyselect_Maven.skyselect_Maven.Buyer_RFQ_check&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -279,24 +198,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'order_draft')
-data.setCell(0, 2, 'skyselect_Maven.skyselect_Maven.Buyer_Order_create')
-data.setCell(0, 3, 17170);
+data.setCell(0, 1, 'tab_req_detail')
+data.setCell(0, 2, 'skyselect_Maven.skyselect_Maven.Buyer_RFQ_check')
+data.setCell(0, 3, 29779);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'login')
-data.setCell(1, 2, 'skyselect_Maven.skyselect_Maven.Buyer_Order_create')
-data.setCell(1, 3, 10071);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'order_part')
-data.setCell(2, 2, 'skyselect_Maven.skyselect_Maven.Buyer_Order_create')
-data.setCell(2, 3, 6146);
+data.setCell(1, 2, 'skyselect_Maven.skyselect_Maven.Buyer_RFQ_check')
+data.setCell(1, 3, 4983);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 seconds</span>
+              <span class="suite-total-time">Total running time: 34 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -308,116 +223,71 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">order_draft</span>
+              <span class="reporter-method-name">tab_req_detail</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Order Dashboard opened</span>
-                <span class="reporter-method-output">Order Draft Opened</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">order_part</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Part Row:</span>
-                <span class="reporter-method-output">  → div: PART NUMBER
-*</span>
-                <span class="reporter-method-output">  → span: PART NUMBER</span>
-                <span class="reporter-method-output">  → div: *</span>
-                <span class="reporter-method-output">  → input: DK120</span>
-                <span class="reporter-method-output">  → div: CPO
-15071-1</span>
-                <span class="reporter-method-output">  → div: CPO</span>
-                <span class="reporter-method-output">  → div: 15071-1</span>
-                <span class="reporter-method-output">  → div: MFR</span>
-                <span class="reporter-method-output">  → div: DESCRIPTION</span>
-                <span class="reporter-method-output">  → input: BOLT</span>
-                <span class="reporter-method-output">  → div: QTY
-*</span>
-                <span class="reporter-method-output">  → span: QTY</span>
-                <span class="reporter-method-output">  → input: 5</span>
-                <span class="reporter-method-output">  → div: UOM
-EA</span>
-                <span class="reporter-method-output">  → div: UOM</span>
-                <span class="reporter-method-output">  → div: EA</span>
-                <span class="reporter-method-output">  → div: UNIT PRICE
-*</span>
-                <span class="reporter-method-output">  → span: UNIT PRICE</span>
-                <span class="reporter-method-output">  → input: 100</span>
-                <span class="reporter-method-output">  → div: CONDITION
-*
-New</span>
-                <span class="reporter-method-output">  → div: CONDITION
-*</span>
-                <span class="reporter-method-output">  → div: New</span>
-                <span class="reporter-method-output">  → div: SERIAL NUMBER</span>
-                <span class="reporter-method-output">  → div: SHIP BY DATE
-*
-Based on quoted LT</span>
-                <span class="reporter-method-output">  → div: SHIP BY DATE
-*</span>
-                <span class="reporter-method-output">  → input: 2025-07-16</span>
-                <span class="reporter-method-output">  → div: Based on quoted LT</span>
-                <span class="reporter-method-output">  → div: NEED BY DATE
-*
-Past due, based on EDD</span>
-                <span class="reporter-method-output">  → div: NEED BY DATE
-*</span>
-                <span class="reporter-method-output">  → div: Past due, based on EDD</span>
-                <span class="reporter-method-output">  → div: REQUISITION NO</span>
-                <span class="reporter-method-output">  → div: NOTES</span>
-                <span class="reporter-method-output">  → div: FEES
-+</span>
-                <span class="reporter-method-output">  → div: FEES</span>
-                <span class="reporter-method-output">  → div: +</span>
-                <span class="reporter-method-output">  → div: $500.00</span>
-                <span class="reporter-method-output">Part Data: PART NUMBER
-*
-CPO
-15071-1
-MFR
-DESCRIPTION
-QTY
-*
-UOM
-EA
-UNIT PRICE
-*
-CONDITION
-*
-New
-SERIAL NUMBER
-SHIP BY DATE
-*
-Based on quoted LT
-NEED BY DATE
-*
-Past due, based on EDD
-REQUISITION NO
-NOTES
-FEES
-+
- $500.00
- </span>
+                <span class="reporter-method-output">RFQ Dashboard opened</span>
+                <span class="reporter-method-output">[2025-07-17 16:20:39] RFQ Dashboard Opened</span>
+                <span class="reporter-method-output">Tender Opened</span>
+                <span class="reporter-method-output">[2025-07-17 16:21:01] Tender Opened</span>
+                <span class="reporter-method-output">Request Details Open</span>
+                <span class="reporter-method-output">[2025-07-17 16:21:02] Request Details Open</span>
+                <span class="reporter-method-output">RFQ type
+Outright purchases</span>
+                <span class="reporter-method-output">[2025-07-17 16:21:03] RFQ type
+Outright purchases</span>
+                <span class="reporter-method-output">Priority
+Routine</span>
+                <span class="reporter-method-output">[2025-07-17 16:21:03] Priority
+Routine</span>
+                <span class="reporter-method-output">Buyer
+Buyer, Air India</span>
+                <span class="reporter-method-output">[2025-07-17 16:21:04] Buyer
+Buyer, Air India</span>
+                <span class="reporter-method-output">Team</span>
+                <span class="reporter-method-output">[2025-07-17 16:21:04] Team</span>
+                <span class="reporter-method-output">Folder
+Buyer</span>
+                <span class="reporter-method-output">[2025-07-17 16:21:05] Folder
+Buyer</span>
+                <span class="reporter-method-output">Location
+Lennart Meri Tallinn Airport</span>
+                <span class="reporter-method-output">[2025-07-17 16:21:05] Location
+Lennart Meri Tallinn Airport</span>
+                <span class="reporter-method-output">Reference number
+REF_123</span>
+                <span class="reporter-method-output">[2025-07-17 16:21:06] Reference number
+REF_123</span>
+                <span class="reporter-method-output">Published
+Jul 8, 2025 23:11</span>
+                <span class="reporter-method-output">[2025-07-17 16:21:06] Published
+Jul 8, 2025 23:11</span>
+                <span class="reporter-method-output">End time
+Jul 9, 2025 23:22</span>
+                <span class="reporter-method-output">[2025-07-17 16:21:07] End time
+Jul 9, 2025 23:22</span>
+                <span class="reporter-method-output">Original end time
+Jul 9, 2025 23:20</span>
+                <span class="reporter-method-output">[2025-07-17 16:21:07] Original end time
+Jul 9, 2025 23:20</span>
+                <span class="reporter-method-output">Tail number
+TL123</span>
+                <span class="reporter-method-output">[2025-07-17 16:21:08] Tail number
+TL123</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">5 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">skyselect_Maven.skyselect_Maven.Buyer_Order_create</span>
+              <span class="ignored-class-name">skyselect_Maven.skyselect_Maven.Buyer_RFQ_check</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">order_draft_old</span>
-                <br/>
-                <span class="ignored-method-name">order_part_old</span>
-                <br/>
-                <span class="ignored-method-name">order_draft_header</span>
-                <br/>
-                <span class="ignored-method-name">order_draft_header_old</span>
-                <br/>
                 <span class="ignored-method-name">secondtest</span>
+                <br/>
+                <span class="ignored-method-name">quote_verify</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -429,68 +299,38 @@ FEES
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">skyselect_Maven.skyselect_Maven.Buyer_Order_create</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">skyselect_Maven.skyselect_Maven.Buyer_RFQ_check</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">setup</span>
-                <span class="method-start">12475 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">login(sales@airindia.com, Test@123)</span>
-                <span class="method-start">12496 ms</span>
+                <span class="method-start">6919 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">12496 ms</span>
+                <span class="method-start">6919 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">22571 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">addResultToTestRail([TestResult name=login status=FAILURE method=BaseTest_Buyer.login(java.lang.String,java.lang.String)...)</span>
-                <span class="method-start">22571 ms</span>
+                <span class="method-name">addResultToTestRail([TestResult name=login status=SUCCESS method=BaseTest_Buyer.login(java.lang.String,java.lang.String)...)</span>
+                <span class="method-start">11902 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">order_draft</span>
-                <span class="method-start">24335 ms</span>
+                <span class="method-name">tab_req_detail</span>
+                <span class="method-start">13351 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">24335 ms</span>
+                <span class="method-start">13351 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">41507 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">addResultToTestRail([TestResult name=order_draft status=SUCCESS method=Buyer_Order_create.order_draft()[pri:0, instance:...)</span>
-                <span class="method-start">41507 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">order_part</span>
-                <span class="method-start">42561 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">42561 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">48709 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">addResultToTestRail([TestResult name=order_part status=SUCCESS method=Buyer_Order_create.order_part()[pri:0, instance:sk...)</span>
-                <span class="method-start">48709 ms</span>
+                <span class="method-name">addResultToTestRail([TestResult name=tab_req_detail status=SUCCESS method=Buyer_RFQ_check.tab_req_detail()[pri:1, instan...)</span>
+                <span class="method-start">43141 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">49941 ms</span>
+                <span class="method-start">44305 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
