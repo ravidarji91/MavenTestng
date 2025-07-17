@@ -1,0 +1,120 @@
+[2025-07-17 12:35:15] New RequestModal open Up
+[2025-07-17 12:35:18] Create a request : SkySelect
+[2025-07-17 12:35:20] Default Set Qty : 
+[2025-07-17 12:35:21] Description added :Test Part
+[2025-07-17 12:35:23] DK120
+QTY
+5
+UOM
+EA
+CERT REQ
+-
+TRACE REQ
+-
+LLP REQ
+-
+DOM/EXP REQ
+-
+MIN CONDITION
+DESCRIPTION
+*
+BOLT
+INTERNAL NOTES
+-
+NEED BY DATE
+-
+REQUISITION NUMBER
+-
+EDIT
+PART NUMBER
+*
+QTY
+UOM
+EA - Each One
+CERT REQ
+TRACE REQ
+LLP REQ
+DOM/EXP REQ
+MIN CONDITION
+Select
+DESCRIPTION
+*
+INTERNAL NOTES
+NEED BY DATE
+REQUISITION NUMBER
+SAVE This is valid
+[2025-07-17 12:35:23] Part Added Successfully :DK120
+QTY
+5
+UOM
+EA
+CERT REQ
+-
+TRACE REQ
+-
+LLP REQ
+-
+DOM/EXP REQ
+-
+MIN CONDITION
+DESCRIPTION
+*
+BOLT
+INTERNAL NOTES
+-
+NEED BY DATE
+-
+REQUISITION NUMBER
+-
+EDIT
+PART NUMBER
+*
+QTY
+UOM
+EA - Each One
+CERT REQ
+TRACE REQ
+LLP REQ
+DOM/EXP REQ
+MIN CONDITION
+Select
+DESCRIPTION
+*
+INTERNAL NOTES
+NEED BY DATE
+REQUISITION NUMBER
+SAVE
+[2025-07-17 12:35:29]  RFQ Published Successfully
+[2025-07-17 12:35:31] RFQ created Successfullyhttps://demo.skyselect.com/db/tender/expresscreate/id_2169
+[2025-07-17 12:35:31] Extracted ID: 2169
+[2025-07-17 12:35:32] #165 ROUTINE RFQ for aircraft TL123 at TLL // REF_123
+[2025-07-17 12:35:34] QC page is Opened
+[2025-07-17 12:35:34] https://demo.skyselect.com/db/tender/expresscreate/id_2169 Opened
+[2025-07-17 12:36:42] RFQ Dashboard opened to verify RFQ detail verify
+[2025-07-17 12:37:04] Tender Opened for RFQ detail verify
+[2025-07-17 12:37:05] Request Details Open
+[2025-07-17 12:37:06] RFQ type
+Outright purchases
+[2025-07-17 12:37:06] Priority
+Routine
+[2025-07-17 12:37:07] Buyer
+Buyer, Air India
+[2025-07-17 12:37:07] Team
+[2025-07-17 12:37:08] Folder
+Buyer
+[2025-07-17 12:37:08] Location
+Lennart Meri Tallinn Airport
+[2025-07-17 12:37:09] Reference number
+REF_123
+[2025-07-17 12:37:09] Published
+Jul 17, 2025 00:06
+[2025-07-17 12:37:10] End time
+Jul 18, 2025 00:10
+[2025-07-17 12:37:10] Tail number
+TL123
+[2025-07-17 12:37:13] PNs Are  Visible
+[2025-07-17 12:37:13] Quote row Clicked
+[2025-07-17 12:37:13] Total Quote Received: 5
+[2025-07-17 12:37:14] Quote is Clicked
+[2025-07-17 12:37:30] Tender Opened for Awarding
+[2025-07-17 12:37:30] Scrolled to Award Button

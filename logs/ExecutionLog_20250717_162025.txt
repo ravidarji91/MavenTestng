@@ -1,0 +1,24 @@
+[2025-07-17 16:20:39] RFQ Dashboard Opened
+[2025-07-17 16:21:01] Tender Opened
+[2025-07-17 16:21:02] Request Details Open
+[2025-07-17 16:21:03] RFQ type
+Outright purchases
+[2025-07-17 16:21:03] Priority
+Routine
+[2025-07-17 16:21:04] Buyer
+Buyer, Air India
+[2025-07-17 16:21:04] Team
+[2025-07-17 16:21:05] Folder
+Buyer
+[2025-07-17 16:21:05] Location
+Lennart Meri Tallinn Airport
+[2025-07-17 16:21:06] Reference number
+REF_123
+[2025-07-17 16:21:06] Published
+Jul 8, 2025 23:11
+[2025-07-17 16:21:07] End time
+Jul 9, 2025 23:22
+[2025-07-17 16:21:07] Original end time
+Jul 9, 2025 23:20
+[2025-07-17 16:21:08] Tail number
+TL123

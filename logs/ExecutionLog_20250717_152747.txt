@@ -1,0 +1,252 @@
+[2025-07-17 15:28:14] New RequestModal open Up
+[2025-07-17 15:28:17] Create a request : SkySelect
+[2025-07-17 15:28:19] Default Set Qty : 
+[2025-07-17 15:28:20] Description added :Test Part
+[2025-07-17 15:28:23] DK120
+QTY
+5
+UOM
+EA
+CERT REQ
+-
+TRACE REQ
+-
+LLP REQ
+-
+DOM/EXP REQ
+-
+MIN CONDITION
+DESCRIPTION
+*
+BOLT
+INTERNAL NOTES
+-
+NEED BY DATE
+-
+REQUISITION NUMBER
+-
+EDIT
+PART NUMBER
+*
+QTY
+UOM
+EA - Each One
+CERT REQ
+TRACE REQ
+LLP REQ
+DOM/EXP REQ
+MIN CONDITION
+Select
+DESCRIPTION
+*
+INTERNAL NOTES
+NEED BY DATE
+REQUISITION NUMBER
+SAVE This is valid
+[2025-07-17 15:28:23] Part Added Successfully :DK120
+QTY
+5
+UOM
+EA
+CERT REQ
+-
+TRACE REQ
+-
+LLP REQ
+-
+DOM/EXP REQ
+-
+MIN CONDITION
+DESCRIPTION
+*
+BOLT
+INTERNAL NOTES
+-
+NEED BY DATE
+-
+REQUISITION NUMBER
+-
+EDIT
+PART NUMBER
+*
+QTY
+UOM
+EA - Each One
+CERT REQ
+TRACE REQ
+LLP REQ
+DOM/EXP REQ
+MIN CONDITION
+Select
+DESCRIPTION
+*
+INTERNAL NOTES
+NEED BY DATE
+REQUISITION NUMBER
+SAVE
+[2025-07-17 15:28:28]  RFQ Published Successfully
+[2025-07-17 15:28:30] RFQ created Successfullyhttps://demo.skyselect.com/db/tender/buyerview/id_2177#bids
+[2025-07-17 15:28:30] Extracted ID: 2177#bids
+[2025-07-17 15:28:32] #173 ROUTINE RFQ for aircraft TL123 at TLL // REF_123
+[2025-07-17 15:28:33] https://demo.skyselect.com/db/tender/buyerview/id_2177#bids Opened
+[2025-07-17 15:29:21] Tender Published Successfully
+[2025-07-17 15:29:25] DK120
+[2025-07-17 15:29:25] Found 9 buttons.
+[2025-07-17 15:29:25] Buttons Are : Assign
+[2025-07-17 15:29:25] Buttons Are : Edit request
+[2025-07-17 15:29:25] Buttons Are : Extend end time
+[2025-07-17 15:29:25] Buttons Are : Invite suppliers
+[2025-07-17 15:29:25] Buttons Are : Recent activity
+[2025-07-17 15:29:25] Buttons Are : Message board
+[2025-07-17 15:29:25] Buttons Are : Award selected quotes
+[2025-07-17 15:29:25] Buttons Are : Actions
+[2025-07-17 15:29:25] Buttons Are : Close quoting
+[2025-07-17 15:29:26] Tender Opened for RFQ detail verify
+[2025-07-17 15:29:26] Request Details Open
+[2025-07-17 15:29:27] RFQ type
+Outright purchases
+[2025-07-17 15:29:27] Priority
+Routine
+[2025-07-17 15:29:28] Buyer
+Buyer, Air India
+[2025-07-17 15:29:28] Team
+[2025-07-17 15:29:29] Folder
+Buyer
+[2025-07-17 15:29:30] Location
+Lennart Meri Tallinn Airport
+[2025-07-17 15:29:30] Reference number
+REF_123
+[2025-07-17 15:29:31] Published
+Jul 17, 2025 02:59
+[2025-07-17 15:29:31] End time
+Jul 18, 2025 03:00
+[2025-07-17 15:29:32] Tail number
+TL123
+[2025-07-17 15:29:34] PNs Are  Visible
+[2025-07-17 15:29:34] Quote row Clicked
+[2025-07-17 15:29:34] Total Quote Received: 5
+[2025-07-17 15:29:35] Quote is Clicked
+[2025-07-17 15:29:35] Quote is from: BEST PART
+[ABCD]| Quote Type :This quote is from an exclusive contract catalog
+[2025-07-17 15:29:36] Quote is Clicked
+[2025-07-17 15:29:37] Quote is from: PROPONENT| Quote Type :This quote is from an exclusive contract catalog
+[2025-07-17 15:29:37] Quote is Clicked
+[2025-07-17 15:29:38] Quote is from: AIRBUS| Quote Type :This quote is from a price catalog
+[2025-07-17 15:29:38] Quote is Clicked
+[2025-07-17 15:29:39] Quote is from: AIRBUS| Quote Type :This quote is from a price catalog
+[2025-07-17 15:29:40] Quote is Clicked
+[2025-07-17 15:29:40] Quote is from: AIRBUS| Quote Type :This quote is from a price catalog
+[2025-07-17 15:29:40] Skyselect  Prefered Quote is Available
+[2025-07-17 15:29:40] Quote value : $500.00
+[2025-07-17 15:29:42] Tender Opened for Awarding
+[2025-07-17 15:29:42] Scrolled to Award Button
+[2025-07-17 15:29:42] Awarding Button Click
+[2025-07-17 15:29:48] 1
+DK120
+REF_123
+STOCK
+5 EA
+1000
+EA
+5 EA
+$100.00
+$500.00
+[2025-07-17 15:29:57] Order Dashboard opened
+[2025-07-17 15:30:01] Order Draft Opened
+[2025-07-17 15:30:03] Order type selected
+[2025-07-17 15:30:03] Order Type Added :Purchase order
+[2025-07-17 15:30:04] Order Priority selected
+[2025-07-17 15:30:04] Order Priority AddedRoutine
+[2025-07-17 15:30:07] Supplier AddedBest Part
+[2025-07-17 15:30:08] Supplier Contact AddedSupplier
+[2025-07-17 15:30:09] Ship to Add Added
+[2025-07-17 15:30:10] Final Dest Added
+[2025-07-17 15:30:11] Tail No Added
+[2025-07-17 15:30:12] Tail No Added
+[2025-07-17 15:30:12] Remarks Added
+[2025-07-17 15:30:13] Remark Added
+[2025-07-17 15:30:13] Notes Added
+[2025-07-17 15:30:14] Notes added
+[2025-07-17 15:30:15] Already there
+[2025-07-17 15:30:17] Already there
+[2025-07-17 15:30:18] PART NUMBER
+*
+CPO
+15071-1
+MFR
+DESCRIPTION
+QTY
+*
+UOM
+EA
+UNIT PRICE
+*
+CONDITION
+*
+New
+SERIAL NUMBER
+SHIP BY DATE
+*
+Date closer than estimated LT
+NEED BY DATE
+*
+Past due, based on EDD
+REQUISITION NO
+NOTES
+FEES
++
+ $500.00
+ 
+[2025-07-17 15:30:18] Found 1 Part Row(s).
+[2025-07-17 15:30:18] Part Row:
+[2025-07-17 15:30:18]   → div: PART NUMBER
+*
+[2025-07-17 15:30:18]   → span: PART NUMBER
+[2025-07-17 15:30:18]   → div: *
+[2025-07-17 15:30:18]   → input: DK120
+[2025-07-17 15:30:19]   → div: CPO
+15071-1
+[2025-07-17 15:30:19]   → div: CPO
+[2025-07-17 15:30:19]   → div: 15071-1
+[2025-07-17 15:30:19]   → div: MFR
+[2025-07-17 15:30:19]   → div: DESCRIPTION
+[2025-07-17 15:30:19]   → input: BOLT
+[2025-07-17 15:30:19]   → div: QTY
+*
+[2025-07-17 15:30:19]   → span: QTY
+[2025-07-17 15:30:19]   → input: 5
+[2025-07-17 15:30:19]   → div: UOM
+EA
+[2025-07-17 15:30:19]   → div: UOM
+[2025-07-17 15:30:19]   → div: EA
+[2025-07-17 15:30:19]   → div: UNIT PRICE
+*
+[2025-07-17 15:30:19]   → span: UNIT PRICE
+[2025-07-17 15:30:19]   → input: 100
+[2025-07-17 15:30:19]   → div: CONDITION
+*
+New
+[2025-07-17 15:30:19]   → div: CONDITION
+*
+[2025-07-17 15:30:19]   → div: New
+[2025-07-17 15:30:20]   → div: SERIAL NUMBER
+[2025-07-17 15:30:20]   → div: SHIP BY DATE
+*
+Date closer than estimated LT
+[2025-07-17 15:30:20]   → div: SHIP BY DATE
+*
+[2025-07-17 15:30:20]   → input: 2025-07-16
+[2025-07-17 15:30:20]   → div: Date closer than estimated LT
+[2025-07-17 15:30:20]   → div: NEED BY DATE
+*
+Past due, based on EDD
+[2025-07-17 15:30:20]   → div: NEED BY DATE
+*
+[2025-07-17 15:30:20]   → div: Past due, based on EDD
+[2025-07-17 15:30:20]   → div: REQUISITION NO
+[2025-07-17 15:30:20]   → div: NOTES
+[2025-07-17 15:30:20]   → div: FEES
++
+[2025-07-17 15:30:20]   → div: FEES
+[2025-07-17 15:30:20]   → div: +
+[2025-07-17 15:30:21]   → div: $500.00

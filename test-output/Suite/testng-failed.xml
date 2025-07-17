@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Check Demo(failed)">
+    <classes>
+      <class name="skyselect_Maven.skyselect_Maven.Buyer_Awarding">
+        <methods>
+          <include name="addResultToTestRail"/>
+          <include name="beforeMethod"/>
+          <include name="Awarding_rfq"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- skyselect_Maven.skyselect_Maven.Buyer_Awarding -->
+    </classes>
+  </test> <!-- Check Demo(failed) -->
+</suite> <!-- Failed suite [Suite] -->

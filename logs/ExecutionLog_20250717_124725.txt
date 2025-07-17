@@ -1,0 +1,142 @@
+[2025-07-17 12:47:53] New RequestModal open Up
+[2025-07-17 12:47:56] Create a request : SkySelect
+[2025-07-17 12:47:58] Default Set Qty : 
+[2025-07-17 12:47:59] Description added :Test Part
+[2025-07-17 12:48:01] DK120
+QTY
+5
+UOM
+EA
+CERT REQ
+-
+TRACE REQ
+-
+LLP REQ
+-
+DOM/EXP REQ
+-
+MIN CONDITION
+DESCRIPTION
+*
+BOLT
+INTERNAL NOTES
+-
+NEED BY DATE
+-
+REQUISITION NUMBER
+-
+EDIT
+PART NUMBER
+*
+QTY
+UOM
+EA - Each One
+CERT REQ
+TRACE REQ
+LLP REQ
+DOM/EXP REQ
+MIN CONDITION
+Select
+DESCRIPTION
+*
+INTERNAL NOTES
+NEED BY DATE
+REQUISITION NUMBER
+SAVE This is valid
+[2025-07-17 12:48:01] Part Added Successfully :DK120
+QTY
+5
+UOM
+EA
+CERT REQ
+-
+TRACE REQ
+-
+LLP REQ
+-
+DOM/EXP REQ
+-
+MIN CONDITION
+DESCRIPTION
+*
+BOLT
+INTERNAL NOTES
+-
+NEED BY DATE
+-
+REQUISITION NUMBER
+-
+EDIT
+PART NUMBER
+*
+QTY
+UOM
+EA - Each One
+CERT REQ
+TRACE REQ
+LLP REQ
+DOM/EXP REQ
+MIN CONDITION
+Select
+DESCRIPTION
+*
+INTERNAL NOTES
+NEED BY DATE
+REQUISITION NUMBER
+SAVE
+[2025-07-17 12:48:06]  RFQ Published Successfully
+[2025-07-17 12:48:08] RFQ created Successfullyhttps://demo.skyselect.com/db/tender/expresscreate/id_2170
+[2025-07-17 12:48:08] Extracted ID: 2170
+[2025-07-17 12:49:45] #166 ROUTINE RFQ for aircraft TL123 at TLL // REF_123
+[2025-07-17 12:50:08] QC page is Opened
+[2025-07-17 12:50:08] https://demo.skyselect.com/db/tender/expresscreate/id_2170 Opened
+[2025-07-17 12:51:03] Tender Published Successfully
+[2025-07-17 12:51:07] DK120
+[2025-07-17 12:51:07] Found 9 buttons.
+[2025-07-17 12:51:07] Buttons Are : Assign
+[2025-07-17 12:51:07] Buttons Are : Edit request
+[2025-07-17 12:51:07] Buttons Are : Extend end time
+[2025-07-17 12:51:07] Buttons Are : Invite suppliers
+[2025-07-17 12:51:07] Buttons Are : Recent activity
+[2025-07-17 12:51:07] Buttons Are : Message board
+[2025-07-17 12:51:07] Buttons Are : Award selected quotes
+[2025-07-17 12:51:07] Buttons Are : Actions
+[2025-07-17 12:51:07] Buttons Are : Close quoting
+[2025-07-17 12:51:10] Tender Opened for RFQ detail verify
+[2025-07-17 12:51:11] Request Details Open
+[2025-07-17 12:51:11] RFQ type
+Outright purchases
+[2025-07-17 12:51:12] Priority
+Routine
+[2025-07-17 12:51:12] Buyer
+Buyer, Air India
+[2025-07-17 12:51:13] Team
+[2025-07-17 12:51:13] Folder
+Buyer
+[2025-07-17 12:51:14] Location
+Lennart Meri Tallinn Airport
+[2025-07-17 12:51:14] Reference number
+REF_123
+[2025-07-17 12:51:15] Published
+Jul 17, 2025 00:18
+[2025-07-17 12:51:15] End time
+Jul 18, 2025 00:20
+[2025-07-17 12:51:16] Tail number
+TL123
+[2025-07-17 12:51:18] PNs Are  Visible
+[2025-07-17 12:51:19] Quote row Clicked
+[2025-07-17 12:51:19] Total Quote Received: 5
+[2025-07-17 12:51:19] Quote is Clicked
+[2025-07-17 12:51:25] Quote is from: BEST PART
+[ABCD]| Quote Type :This quote is from an exclusive contract catalog
+[2025-07-17 12:51:25] Quote is Clicked
+[2025-07-17 12:51:26] Quote is from: PROPONENT| Quote Type :This quote is from an exclusive contract catalog
+[2025-07-17 12:51:27] Quote is Clicked
+[2025-07-17 12:51:27] Quote is from: AIRBUS| Quote Type :This quote is from a price catalog
+[2025-07-17 12:51:28] Quote is Clicked
+[2025-07-17 12:51:29] Quote is from: AIRBUS| Quote Type :This quote is from a price catalog
+[2025-07-17 12:51:29] Quote is Clicked
+[2025-07-17 12:51:30] Quote is from: AIRBUS| Quote Type :This quote is from a price catalog
+[2025-07-17 12:51:30] Skyselect  Prefered Quote is Available
+[2025-07-17 12:51:41] Tender Opened for Awarding
+[2025-07-17 12:51:41] Scrolled to Award Button

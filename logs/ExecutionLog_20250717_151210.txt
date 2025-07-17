@@ -1,0 +1,94 @@
+[2025-07-17 15:12:37] New RequestModal open Up
+[2025-07-17 15:12:40] Create a request : SkySelect
+[2025-07-17 15:12:42] Default Set Qty : 
+[2025-07-17 15:12:44] Description added :Test Part
+[2025-07-17 15:12:46] DK120
+QTY
+5
+UOM
+EA
+CERT REQ
+-
+TRACE REQ
+-
+LLP REQ
+-
+DOM/EXP REQ
+-
+MIN CONDITION
+DESCRIPTION
+*
+BOLT
+INTERNAL NOTES
+-
+NEED BY DATE
+-
+REQUISITION NUMBER
+-
+EDIT
+PART NUMBER
+*
+QTY
+UOM
+EA - Each One
+CERT REQ
+TRACE REQ
+LLP REQ
+DOM/EXP REQ
+MIN CONDITION
+Select
+DESCRIPTION
+*
+INTERNAL NOTES
+NEED BY DATE
+REQUISITION NUMBER
+SAVE This is valid
+[2025-07-17 15:12:46] Part Added Successfully :DK120
+QTY
+5
+UOM
+EA
+CERT REQ
+-
+TRACE REQ
+-
+LLP REQ
+-
+DOM/EXP REQ
+-
+MIN CONDITION
+DESCRIPTION
+*
+BOLT
+INTERNAL NOTES
+-
+NEED BY DATE
+-
+REQUISITION NUMBER
+-
+EDIT
+PART NUMBER
+*
+QTY
+UOM
+EA - Each One
+CERT REQ
+TRACE REQ
+LLP REQ
+DOM/EXP REQ
+MIN CONDITION
+Select
+DESCRIPTION
+*
+INTERNAL NOTES
+NEED BY DATE
+REQUISITION NUMBER
+SAVE
+[2025-07-17 15:12:51]  RFQ Published Successfully
+[2025-07-17 15:12:53] RFQ created Successfullyhttps://demo.skyselect.com/db/tender/buyerview/id_2176#bids
+[2025-07-17 15:12:53] Extracted ID: 2176#bids
+[2025-07-17 15:12:55] #172 ROUTINE RFQ for aircraft TL123 at TLL // REF_123
+[2025-07-17 15:12:56] https://demo.skyselect.com/db/tender/buyerview/id_2176#bids Opened
+[2025-07-17 15:13:58] Tender Opened for Awarding
+[2025-07-17 15:13:58] Scrolled to Award Button
+[2025-07-17 15:13:58] Awarding Button Click
